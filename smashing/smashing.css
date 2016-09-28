@@ -1,0 +1,25 @@
+.slide {
+  background: linear-gradient(#e6f4fd, #9ad4f6); }
+  .slide:after {
+    background: url(conference-building-oxford.png) 90% 90% no-repeat;
+    content: '';
+    -webkit-filter: opacity(25%);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1; }
+
+.imagebg:after {
+  background: none; }
+
+.lasers:before {
+  background-image: url(lasercat.jpg); }
+.lasers:after {
+  content: 'http://www.flickr.com/photos/taxifisch/13251951364/in'; }
+
+.stagecat:before {
+  background-image: url(smashing_cat.jpg); }
+.stagecat:after {
+  content: 'http://www.flickr.com/photos/marcthiele/13264903873/in'; }
