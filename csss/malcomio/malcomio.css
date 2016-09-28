@@ -1,0 +1,77 @@
+* {
+  padding: 0;
+  margin: 0;
+  font: inherit;
+  color: inherit; }
+
+body {
+  font-family: 'Helvetica Neue', Helvetica, sans-serif; }
+  body:after {
+    display: block; }
+
+h1,
+h2,
+h3,
+h4 {
+  text-align: center; }
+
+h2 {
+  font-size: 2.2rem; }
+
+h3 {
+  font-size: 1.3rem; }
+
+h4 {
+  font-size: 1.1rem; }
+
+a {
+  text-decoration: none; }
+  a:hover, a:focus {
+    text-decoration: underline; }
+  a i {
+    font-size: 50%;
+    margin-left: 5px; }
+
+.slide .slide-content {
+  padding: 1rem; }
+.slide.dark {
+  color: #fff;
+  text-shadow: #000 2px 2px; }
+.slide.light {
+  text-shadow: #fff 1px 1px; }
+
+.inset {
+  position: absolute;
+  font-size: 30%;
+  right: 20px;
+  bottom: 50px;
+  max-width: 500px; }
+
+.imagebg:before {
+  background-size: cover;
+  content: ' ';
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1; }
+.imagebg:after {
+  font-size: 0.7rem;
+  position: absolute;
+  bottom: 0;
+  left: 0; }
+
+ul {
+  padding-left: 2rem; }
+
+.footnotes {
+  font-size: 50%; }
+
+.colophon {
+  border-top: 1px solid;
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  padding: 0.25em;
+  width: 97%;
+  z-index: 999; }
