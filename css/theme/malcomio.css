@@ -9,3 +9,15 @@
 .text-on-light ul {
   background-color: rgba(0, 0, 0, 0.8);
 }
+
+.line-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.has-footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 10em;
+}
