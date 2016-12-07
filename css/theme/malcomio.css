@@ -8,6 +8,7 @@
 .text-on-light p,
 .text-on-light ul {
   background-color: rgba(0, 0, 0, 0.8);
+  color: #FFF;
 }
 
 .line-wrapper {

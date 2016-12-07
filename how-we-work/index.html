@@ -44,26 +44,41 @@
 
   <!-- Any section element inside of this container is displayed as a slide -->
   <div class="slides">
-    <section data-markdown="slides/01.md"
-             data-separator="^\n\n\n"
-             data-separator-vertical="^\n\n"
-             data-separator-notes="^Note:"
-             data-charset="iso-8859-15">
+    <section data-markdown>
+      <script type="text/template">
+         # How We Work
+      </script>
     </section>
 
-    <section data-markdown="slides/02.md"
-             data-separator="^\n\n\n"
-             data-separator-vertical="^\n\n"
-             data-separator-notes="^Note:"
-             data-charset="iso-8859-15"
-             class="text-on-light">
+    <section data-markdown class="text-on-light">
+      <script type="text/template">
+             don't edit code on servers
+
+             appropriate level of task granularity
+             how to recognise what’s a duplicate issue, and what's a different issue - e.g. NT-2985 and NT-3229
+             don’t brush things under the carpet
+             don’t just fix the symptom, fix the cause
+             how to diagnose issues / problem-solving
+             where to start digging
+
+             avoid silos
+             e.g. devops -
+             bus number
+             knowledge on people’s machines or in people's heads doesn’t exist
+             wiki
+             version control
+
+
+
              <p>all change should be logged, repeatable, deployable
              tickets for everything, ticket numbers in commits
            </p>
+      </script>
     </section>
 
     <section data-background-image="images/YourCountryNeedsYou.jpg"
-             data-background-size="contain">
+             data-background-size="contain"
+             class="text-on-light">
       <p class="fragment">take responsibility for things</p>
       <p class="fragment">volunteer for tasks, don't wait to have them assigned to you</p>
       <aside class="notes">
@@ -77,10 +92,20 @@
 
     <section data-background-image="images/automate.jpg"
              data-background-size="contain"
-             data-background-color="#FFF">
+             data-background-color="#FFF"
+             class="text-on-dark">
 
       <p class="fragment">especially things people aren’t very good at</p>
       <p class="fragment">repetitive tasks</p>
+    </section>
+
+    <section data-markdown>
+      <script type="text/template">
+        ## Increase your team's bus number
+        <aside class="notes">
+
+        </aside>
+      </script>
     </section>
 
     <section data-markdown>
