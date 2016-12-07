@@ -18,7 +18,7 @@
         content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
   <link rel="stylesheet" href="../css/reveal.css">
-  <link rel="stylesheet" href="../css/theme/black.css" id="theme">
+  <link rel="stylesheet" href="../css/theme/malcomio.css">
 
   <!-- Theme used for syntax highlighting of code -->
   <link rel="stylesheet" href="../lib/css/zenburn.css">
@@ -43,24 +43,44 @@
 
   <!-- Any section element inside of this container is displayed as a slide -->
   <div class="slides">
-    <section data-markdown="slides/01.md"
-             data-separator="^\n\n\n"
-             data-separator-vertical="^\n\n"
-             data-separator-notes="^Note:"
-             data-charset="iso-8859-15">
-    </section>
+    <section data-markdown>
+      <script type="text/template">
+         # How We Work
+         <aside class="notes">
+           don't edit code on servers
 
-    <section data-markdown="slides/02.md"
-             data-separator="^\n\n\n"
-             data-separator-vertical="^\n\n"
-             data-separator-notes="^Note:"
-             data-charset="iso-8859-15">
+           appropriate level of task granularity
+           how to recognise what’s a duplicate issue, and what's a different issue - e.g. NT-2985 and NT-3229
+           don’t brush things under the carpet
+           don’t just fix the symptom, fix the cause
+           how to diagnose issues / problem-solving
+           where to start digging
+
+           avoid silos
+           e.g. devops -
+           bus number
+           knowledge on people’s machines or in people's heads doesn’t exist
+           wiki
+           version control
+
+
+
+           <p>all change should be logged, repeatable, deployable
+           tickets for everything, ticket numbers in commits
+         </aside>
+      </script>
     </section>
 
     <section data-background-image="images/YourCountryNeedsYou.jpg"
-             data-background-size="contain">
+             data-background-size="contain"
+             class="text-on-light"
+             >
+      <h2 class="fragment">Volunteer</h2>
       <p class="fragment">take responsibility for things</p>
       <p class="fragment">volunteer for tasks, don't wait to have them assigned to you</p>
+      <aside class="notes">
+
+      </aside>
     </section>
 
     <section>
@@ -70,10 +90,33 @@
 
     <section data-background-image="images/automate.jpg"
              data-background-size="contain"
-             data-background-color="#FFF">
+             data-background-color="#FFF"
+             class="text-on-dark">
 
       <p class="fragment">especially things people aren’t very good at</p>
       <p class="fragment">repetitive tasks</p>
+    </section>
+
+    <section
+      data-markdown
+      data-background-image="images/silos.jpg"
+    >
+      <script type="text/template">
+        ## Avoid silos
+        <aside class="notes">
+          Teams need to communicate - internally and between teams
+        </aside>
+      </script>
+    </section>
+
+
+    <section data-markdown>
+      <script type="text/template">
+        ## Increase your team's bus number
+        <aside class="notes">
+
+        </aside>
+      </script>
     </section>
 
     <section data-markdown>
@@ -96,6 +139,7 @@
       <h2>Image credits</h2>
       Lord Kitchener: https://commons.wikimedia.org/wiki/File:YourCountryNeedsYou.jpg
       Automate All The Things: https://memegenerator.net/instance/9449708
+      Silos: https://commons.wikimedia.org/wiki/File%3ARalls_Texas_Grain_Silos_2010.jpg
       <a title="By Bob Garland from Manchester, UK (Big Red London Bus) [CC BY-SA 2.0 (http://creativecommons.org/licenses/by-sa/2.0)], via Wikimedia Commons" href="https://commons.wikimedia.org/wiki/File%3AArriva_London_Routemaster_bus_RML2636_(NML_636E)%2C_Westminster_Bridge%2C_route_159%2C_8_December_2005_uncropped.jpg"><img width="512" alt="Arriva London Routemaster bus RML2636 (NML 636E), Westminster Bridge, route 159, 8 December 2005 uncropped" src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f5/Arriva_London_Routemaster_bus_RML2636_%28NML_636E%29%2C_Westminster_Bridge%2C_route_159%2C_8_December_2005_uncropped.jpg/512px-Arriva_London_Routemaster_bus_RML2636_%28NML_636E%29%2C_Westminster_Bridge%2C_route_159%2C_8_December_2005_uncropped.jpg"/></a>
       <a title="Oxyman [CC BY-SA 2.0 (http://creativecommons.org/licenses/by-sa/2.0), GFDL (http://www.gnu.org/copyleft/fdl.html), CC-BY-SA-3.0 (http://creativecommons.org/licenses/by-sa/3.0/) or CC BY 2.5 (http://creativecommons.org/licenses/by/2.5)], via Wikimedia Commons" href="https://commons.wikimedia.org/wiki/File%3ARoutemaster_RM1562.jpg"><img width="512" alt="Routemaster RM1562" src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/75/Routemaster_RM1562.jpg/512px-Routemaster_RM1562.jpg"/></a>
       <a title="By Yuichi from Morioka, Japan (Routemaster) [CC BY-SA 2.0 (http://creativecommons.org/licenses/by-sa/2.0)], via Wikimedia Commons" href="https://commons.wikimedia.org/wiki/File%3AEast_London_Routemaster_bus_RM2050_(ALM_50B)_heritage_route_15_St_Pauls_5_December_2005.jpg"><img width="256" alt="East London Routemaster bus RM2050 (ALM 50B) heritage route 15 St Pauls 5 December 2005" src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/East_London_Routemaster_bus_RM2050_%28ALM_50B%29_heritage_route_15_St_Pauls_5_December_2005.jpg/256px-East_London_Routemaster_bus_RM2050_%28ALM_50B%29_heritage_route_15_St_Pauls_5_December_2005.jpg"/></a>
