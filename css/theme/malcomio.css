@@ -608,3 +608,8 @@ body {
     height: 50%;
     margin: 0 !important;
     border: 0 !important; }
+
+.reveal section .no-border {
+  background: none;
+  border: none;
+  box-shadow: none; }
