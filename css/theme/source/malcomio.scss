@@ -63,6 +63,15 @@ $selectionBackgroundColor: rgba(0, 0, 0, 0.99);
   width: 100%;
 }
 
+.tight {
+  &,
+  p,
+  p img {
+    line-height: 1;
+    margin-top: 0;
+  }
+}
+
 .has-footer {
   display: flex;
   flex-direction: column;
