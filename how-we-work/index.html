@@ -45,24 +45,21 @@
 
   <!-- Any section element inside of this container is displayed as a slide -->
   <div class="slides">
-    <section data-markdown>
+    <section data-markdown data-background-color="#fff">
       <script type="text/template">
          # How We Work
          Building a software engineering team culture at Capgemini
          
          
-         Malcolm Young    
-         Senior Software Engineer
+         Malcolm Young  
+         Senior Software Engineer  
+         <img src="images/capgemini_logo.svg" class="no-border" width="300" />
          https://malcomio.github.io/presentations/how-we-work
          [@malcomio](https://twitter.com/malcomio)
          <aside class="notes">
-
-           don’t brush things under the carpet
-           don’t just fix the symptom, fix the cause
-           how to diagnose issues / problem-solving
-           where to start digging
-
-
+           Not a technical talk, not Drupal-specific  
+           No code examples  
+           But I hope it will help make your team more effective, resilient, stronger   
          </aside>
       </script>
     </section>
@@ -86,12 +83,12 @@
       <script type="text/template">
       <h2>It's OK to say you don't know the answer</h2>
       <p class="fragment">Best case: "It's fixed already"</p>
-      <p class="fragment">2nd best: "I know what the problem is, and it will be fixed before 12.00 today"</p>
-      <p class="fragment">3rd best: "I'm working on fixing the problem, and I'll update you later"</p>
+      <p class="fragment">2nd best: "I know what the problem is, and it will be fixed by the end of the day"</p>
+      <p class="fragment">3rd best: "I'm working on it, and I'll update you later"</p>
       <p class="fragment">Worst case scenario: no answer</p>
 
       <aside class="notes">
-
+        Communication - clients  
       </aside>
       </script>
     </section>
@@ -104,7 +101,9 @@
       <script type="text/template">
         <h2 class="fragment">Don’t expect “experts” to solve the problems for you</h2>
         <aside class="notes">
-          Experts are just people who have thought about a problem for longer than you
+          Someone said in a different context: People have had enough of experts  
+          Experts, Gurus, Ninjas, Rockstars  
+          Experts are just people who have thought about a problem for longer than you  
           [Niels Bohr: "An expert is a person who has found out by his own painful experience all the mistakes that one can make in a very narrow field."](https://en.wikiquote.org/wiki/Niels_Bohr)
 
         </aside>
@@ -120,6 +119,12 @@
       <script type="text/template">
         <h2 class="fragment">You can become an expert</h2>
         <aside class="notes">
+          When I see what some of my colleagues work on, I feel stupid  
+          But you probably know more than you think you do  
+          And you can learn even more  
+          Think before you ask  
+          Push beyond your comfort zone  
+          Eric Raymond: Ask questions the smart way  
         </aside>
       </script>
     </section>
@@ -130,7 +135,9 @@
       <script type="text/template">
         <aside class="notes">
           Here's the other problem with experts.  
-          What if they're busy? What if they quit? What if they get hit by a bus?
+          What if they're busy? What if they quit? What if they get hit by a bus?  
+          If team is reliant on an expert, best case scenario: bottleneck  
+          worst case scenario: leave and take knowledge with them  
         </aside>
       </script>
     </section>
@@ -142,8 +149,8 @@
       <script type="text/template">
         <h2 class="fragment">Increase your team's bus number</h2>
         <aside class="notes">
-          knowledge on people’s machines or in people's heads doesn’t exist
-          wiki
+          knowledge on people’s machines or in people's heads doesn’t exist  
+          documentation - wiki, code  
 
         </aside>
       </script>
@@ -162,30 +169,29 @@
       </script>
     </section>
 
-    <section
-      data-markdown
-      data-background-image="images/hello.jpg">
-      <script type="text/template">
-        <aside class="notes">
-          Instant messages are like post-it notes.
-          Imagine leaving this on someone's desk. And following it up with this.
-        </aside>
-      </script>
-    </section>
+    <!--<section-->
+      <!--data-markdown-->
+      <!--data-background-image="images/hello.jpg">-->
+      <!--<script type="text/template">-->
+        <!--<aside class="notes">-->
+          <!--Instant messages are like post-it notes.-->
+          <!--Imagine leaving this on someone's desk. And following it up with this.-->
+        <!--</aside>-->
+      <!--</script>-->
+    <!--</section>-->
 
-    <section
-      data-markdown
-      data-background-image="images/can_i_ask_you.jpg"
-      class="text-on-light">
-      <script type="text/template">
-        <h2 class="fragment">It's easier to ask forgiveness than it is to get permission</h2>
-        <aside class="notes">
-          Don't ask if you can ask a question - just ask it
-          [Grace Hopper](https://en.wikiquote.org/wiki/Grace_Hopper) - US Navy Admiral, invented the first compiler.
-        </aside>
-      </script>
-    </section>
-
+    <!--<section-->
+      <!--data-markdown-->
+      <!--data-background-image="images/can_i_ask_you.jpg"-->
+      <!--class="text-on-light">-->
+      <!--<script type="text/template">-->
+        <!--<h2 class="fragment">It's easier to ask forgiveness than it is to get permission</h2>-->
+        <!--<aside class="notes">-->
+          <!--Don't ask if you can ask a question - just ask it-->
+          <!--[Grace Hopper](https://en.wikiquote.org/wiki/Grace_Hopper) - US Navy Admiral, invented the first compiler.-->
+        <!--</aside>-->
+      <!--</script>-->
+    <!--</section>-->
 
     <section
       data-markdown
@@ -194,12 +200,14 @@
       <script type="text/template">
         <h2 class="fragment">Be honest</h2>
         <aside class="notes">
-          If you see a problem, don't try to cover it up.  
+          If you see a problem, don't try to cover it up.
+          Don’t brush things under the carpet  
+          Don’t just fix the symptom, fix the cause  
           Don't operate a blame culture.  
+          We're all on the same team, working towards the same goal.
         </aside>
       </script>
     </section>
-
 
     <section
       data-background-image="images/automate.jpg"
@@ -239,8 +247,8 @@
           all change should be logged, repeatable, deployable
           tickets for everything, ticket numbers in commits
 
-          Do the work, and be seen to do the work
-          Issue tracker should be a single source of truth
+          Do the work, and be seen to do the work  
+          Issue tracker should be a single source of truth  
           version control
 
 
@@ -251,28 +259,48 @@
     <section data-markdown>
       <script type="text/template">
         ## Thank you
-
-        [How We Work: A blog post written with Andrew Harmel-Law](https://capgemini.github.io/development/how-we-work/)
-
-        https://malcomio.github.io/presentations/how-we-work  
-        
-        [Twitter: @malcomio](https://twitter.com/malcomio)  
-        http://red-route.org
-
       </script>
     </section>
 
     <section data-markdown>
       ## Image credits
-* [Lord Kitchener](https://commons.wikimedia.org/wiki/File:YourCountryNeedsYou.jpg)
-* [Automate All The Things](https://memegenerator.net/instance/9449708)
-* [Silos](https://commons.wikimedia.org/wiki/File%3ARalls_Texas_Grain_Silos_2010.jpg)
-* Buses: [1](https://commons.wikimedia.org/wiki/File%3AArriva_London_Routemaster_bus_RML2636_%28NML_636E%29%2C_Westminster_Bridge%2C_route_159%2C_8_December_2005_uncropped.jpg), [2](https://commons.wikimedia.org/wiki/File%3ARoutemaster_RM1562.jpg), [3](https://commons.wikimedia.org/wiki/File%3AEast_London_Routemaster_bus_RM2050_%28ALM_50B%29_heritage_route_15_St_Pauls_5_December_2005.jpg), [4](https://commons.wikimedia.org/wiki/File%3ARoutemaster_RM6.jpg), [5](https://commons.wikimedia.org/wiki/File%3AMumbai_03-2016_48_bus_in_Mahim.jpg)
-* [Expert worship](https://commons.wikimedia.org/wiki/File%3AArolsen_Klebeband_18_087_2.jpg)
-* [Flowchart](https://xkcd.com/627/)      
-* [Workbench](https://commons.wikimedia.org/wiki/File%3AGarage_Workbench_-_%281%29.jpg)
-* [Messy room](https://www.flickr.com/photos/alismith44/357361903)
-* [Sweeper Mural](https://commons.wikimedia.org/wiki/File:CEPT_Sweeper_Painting.JPG)
+      * [Lord Kitchener](https://commons.wikimedia.org/wiki/File:YourCountryNeedsYou.jpg)
+      * [Automate All The Things](https://memegenerator.net/instance/9449708)
+      * [Silos](https://commons.wikimedia.org/wiki/File%3ARalls_Texas_Grain_Silos_2010.jpg)
+      * Buses: [1](https://commons.wikimedia.org/wiki/File%3AArriva_London_Routemaster_bus_RML2636_%28NML_636E%29%2C_Westminster_Bridge%2C_route_159%2C_8_December_2005_uncropped.jpg), [2](https://commons.wikimedia.org/wiki/File%3ARoutemaster_RM1562.jpg), [3](https://commons.wikimedia.org/wiki/File%3AEast_London_Routemaster_bus_RM2050_%28ALM_50B%29_heritage_route_15_St_Pauls_5_December_2005.jpg), [4](https://commons.wikimedia.org/wiki/File%3ARoutemaster_RM6.jpg), [5](https://commons.wikimedia.org/wiki/File%3AMumbai_03-2016_48_bus_in_Mahim.jpg)
+      * [Expert worship](https://commons.wikimedia.org/wiki/File%3AArolsen_Klebeband_18_087_2.jpg)
+      * [Flowchart](https://xkcd.com/627/)
+      * [Workbench](https://commons.wikimedia.org/wiki/File%3AGarage_Workbench_-_%281%29.jpg)
+      * [Messy room](https://www.flickr.com/photos/alismith44/357361903)
+      * [Sweeper Mural](https://commons.wikimedia.org/wiki/File:CEPT_Sweeper_Painting.JPG)
+    </section>
+
+    <section data-markdown>
+      <script type="text/template">
+        [@malcomio](https://twitter.com/malcomio)
+      
+        http://red-route.org
+
+        [How We Work: A blog post written with Andrew Harmel-Law](https://capgemini.github.io/development/how-we-work/)
+
+        https://malcomio.github.io/presentations/how-we-work
+      </script>
+    </section>
+
+    <section data-markdown>
+      <script type="text/template">
+        ## Further Reading
+        Eric Raymond: How to Ask Questions
+      </script>
+    </section>
+
+    
+    
+    <section data-markdown data-background-color="#fff">
+      <script type="text/template">
+        <img src="images/capgemini_logo.svg" class="no-border" />  
+        https://capgemini.github.io
+      </script>
     </section>
   </div>
 
