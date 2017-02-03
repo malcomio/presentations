@@ -30,7 +30,6 @@ $selectionBackgroundColor: rgba(0, 0, 0, 0.99);
 
 
 // Theme template ------------------------------
-@import "../template/theme";
 @import "black";
 // ---------------------------------------------
 
@@ -95,4 +94,8 @@ $selectionBackgroundColor: rgba(0, 0, 0, 0.99);
   background: none;
   border: none;
   box-shadow: none;
+}
+
+table.no-border {
+  border: none;
 }
