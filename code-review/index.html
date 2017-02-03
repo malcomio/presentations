@@ -1,0 +1,316 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+
+  <title>Everyone's a Critic - The Why And How of Code Review</title>
+
+  <meta name="description"
+        content="A presentation on why and how to do code review for Drupal">
+  <meta name="author" content="Malcolm Young">
+
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style"
+        content="black-translucent">
+
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+  <link rel="stylesheet" href="../css/reveal.css">
+  <link rel="stylesheet" href="../css/theme/malcomio.css">
+
+  <!-- Theme used for syntax highlighting of code -->
+  <link rel="stylesheet" href="../lib/css/zenburn.css">
+
+  <!-- Printing and PDF exports -->
+  <script>
+    var link = document.createElement('link');
+    var print = window.location.search.match(/print-pdf/gi);
+
+    link.rel = 'stylesheet';
+    link.type = 'text/css';
+    link.href = print ? '/css/print/pdf.css' : '/css/print/paper.css';
+    document.getElementsByTagName('head')[0].appendChild(link);
+  </script>
+
+  <!--[if lt IE 9]><script src="../lib/js/html5shiv.js"></script><![endif]-->
+</head>
+
+<body>
+
+<div class="reveal">
+
+  <!-- Any section element inside of this container is displayed as a slide -->
+  <div class="slides">
+    <section data-markdown data-background-color="#fff">
+      <script type="text/template">
+        # Everyone's A Critic
+        ## The Why And How of Code Review
+
+        Malcolm Young  
+        Senior Software Engineer  
+        <img src="../images/capgemini_logo.svg" class="no-border" width="300"/>
+
+        [@malcomio](https://twitter.com/malcomio)
+
+        https://malcomio.github.io/presentations/code-review
+
+        <aside class="notes">
+
+        </aside>
+      </script>
+    </section>
+
+    <section data-markdown data-background-color="#fff">
+      <script type="text/template">
+        ## Why?
+        <aside class="notes">
+          People think they don't have time
+
+          Alex Pott
+        </aside>
+      </script>
+    </section>
+
+    <section data-markdown data-background-color="#fff">
+      <script type="text/template">
+        <img src="images/alex_pott.jpg" />
+        ## Thanks Alex
+        <aside class="notes">
+          
+          Alex Pott
+        </aside>
+      </script>
+    </section>
+    
+    
+
+    <section 
+      data-markdown 
+      data-background-image="images/code-reviews.png"
+      data-background-size="contain"
+      class="text-on-light"
+    >
+      <script type="text/template">
+        ## Prevent bugs
+        <aside class="notes">
+
+        </aside>
+      </script>
+    </section>
+
+    <section data-markdown data-background-color="#fff">
+      <script type="text/template">
+        ## How?
+        <aside class="notes">
+
+        </aside>
+      </script>
+    </section>
+
+    <section data-markdown data-background-color="#fff">
+      <script type="text/template">
+        ## How?
+        <aside class="notes">
+
+        </aside>
+      </script>
+    </section>
+
+    <section
+      data-markdown 
+      data-background-color="#fff"
+      data-background-image="images/needle.jpg"
+    >
+      <script type="text/template">
+        ## How?
+        <aside class="notes">
+
+        </aside>
+      </script>
+    </section>
+
+    <section
+      data-markdown
+      data-background-color="#fff"
+      data-background-image="images/haystacks.jpg"
+    >
+      <script type="text/template">
+        ## stuff
+        <aside class="notes">
+
+        </aside>
+      </script>
+    </section>
+
+    <section
+      data-markdown
+      data-background-image="images/binoculars.jpg"
+    >
+      <script type="text/template">
+        <h2 class="fragment">What Are We Looking For?</h2>
+
+        <aside class="notes">
+
+        </aside>
+      </script>
+    </section>
+
+    <section
+      data-markdown
+      data-background-image="images/dogs.jpg"
+      class="text-on-light"
+    >
+      <script type="text/template">
+        <h2 class="fragment">Code smells</h2>
+        <p class="fragment">
+          Larry Garfield at DrupalCon London 2011  
+          https://www.youtube.com/watch?v=Z78ZP_UtaKE
+        </p>
+
+        <aside class="notes">
+          Larry Garfield
+        </aside>
+      </script>
+    </section>
+
+    <section
+      data-markdown
+      data-background-image="images/automate.jpg"
+      data-background-size="contain"
+      data-background-color="#FFF"
+      class="text-on-light">
+      <script type="text/template">
+        <p class="fragment">http://reload.github.io/jenkins-drupal-template/</p>
+        <aside class="notes">
+          builds
+          automated testing
+
+          appropriate level depends on size of your team
+
+          pull requests - unit testing, checkstyle
+
+          Why coding standards?
+        </aside>
+      </script>
+    </section>
+
+    <section
+      data-markdown
+      data-background-image="images/trust_no_one.jpg"
+      class="text-on-light">
+      <script type="text/template">
+        <h2 class="fragment">Never Trust User Input</h2>
+        <p class="fragment">Sanitise Everything</p>
+        <p class="fragment">https://www.drupal.org/docs/7/security/writing-secure-code</p>
+        
+        <aside class="notes">
+          
+        </aside>
+      </script>
+    </section>
+
+    <section data-markdown>
+      <script type="text/template">
+        ## Thank you
+
+        https://malcomio.github.io/presentations/code-review
+
+        [@malcomio](https://twitter.com/malcomio)
+
+        http://red-route.org
+      </script>
+    </section>
+
+    <section data-markdown>
+      ## Image credits
+      * [Defect Graphs](http://www.tsphethean.co.uk/blog/2013/11/28/Reviewing-code-reviews/)
+      * [Needle](https://commons.wikimedia.org/wiki/File:Naehnadel.jpg)
+      * [Haystacks](https://commons.wikimedia.org/wiki/File:Hay_cocks_-_geograph.org.uk_-_1439469.jpg)
+      * [Trust No One](https://www.flickr.com/photos/lynnfriedman/6278971615)
+      * [Speak Your Mind](https://www.flickr.com/photos/wfryer/3242288624)
+      * [Alex Pott](https://twitter.com/pdjohnson/status/781489468008194049)
+      * [Binoculars](https://www.flickr.com/photos/cloresinparadise/3382640460)
+      * [Dogs](https://www.flickr.com/photos/steve-wilson/458703692)
+    </section>
+
+    <section data-markdown>
+      <script type="text/template">
+        ## Further Reading
+        [Better Learning Through Code Reviews](https://capgemini.github.io/learning/better-learning-code-reviews/)  
+        [What To Look For In A Code Review](https://capgemini.github.io/drupal/what-to-look-for-in-code-review/)  
+
+      </script>
+    </section>
+
+    <section data-markdown data-background-color="#fff">
+      <script type="text/template">
+        <img src="../images/capgemini_logo.svg" class="no-border"/>
+        https://capgemini.github.io
+        <aside class="notes">
+
+        </aside>
+      </script>
+    </section>
+  </div>
+
+</div>
+
+<script src="../lib/js/head.min.js"></script>
+<script src="../js/reveal.js"></script>
+
+<script>
+
+  // More info https://github.com/hakimel/reveal.js#configuration
+  Reveal.initialize({
+    controls: true,
+    progress: true,
+    history: true,
+    center: true,
+    showNotes: print,
+
+    transition: 'slide', // none/fade/slide/convex/concave/zoom
+
+    // More info https://github.com/hakimel/reveal.js#dependencies
+    dependencies: [
+      {
+        src: '../lib/js/classList.js',
+        condition: function () {
+          return !document.body.classList;
+        }
+      },
+      {
+        src: '../plugin/markdown/marked.js',
+        condition: function () {
+          return !!document.querySelector('[data-markdown]');
+        }
+      },
+      {
+        src: '../plugin/markdown/markdown.js',
+        condition: function () {
+          return !!document.querySelector('[data-markdown]');
+        }
+      },
+      {
+        src: '../plugin/highlight/highlight.js',
+        async: true,
+        callback: function () {
+          hljs.initHighlightingOnLoad();
+        }
+      },
+      {
+        src: '../plugin/zoom-js/zoom.js',
+        async: true
+      },
+      {
+        src: '../plugin/notes/notes.js',
+        async: true
+      }
+    ]
+  });
+
+</script>
+
+</body>
+</html>
