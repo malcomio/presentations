@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /**
  * A custom theme for Malcolm Young's reveal.js presentations
  */
@@ -356,3 +357,19 @@ body {
 
 table.no-border {
   border: none; }
+
+.reveal q,
+.reveal blockquote {
+  quotes: "“" "”" "‘" "’"; }
+  .reveal q:before,
+  .reveal blockquote:before {
+    content: open-quote; }
+  .reveal q:after,
+  .reveal blockquote:after {
+    content: close-quote; }
+
+.reveal blockquote {
+  background: none;
+  box-shadow: none;
+  text-transform: uppercase;
+  font-size: 1.6em; }
