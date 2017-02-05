@@ -92,6 +92,10 @@ $selectionBackgroundColor: rgba(0, 0, 0, 0.99);
     margin: 0 !important;
     border: 0 !important;
   }
+  
+  &.three-column > * {
+    width: 33%;
+  }
 }
 
 .reveal section .no-border,

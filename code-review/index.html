@@ -157,9 +157,18 @@
       </script>
     </section>
 
+    <section data-background-image="images/how.jpg">
+      <script type="text/template">
+        <p></p>
+        <aside class="notes">
+          
+        </aside>
+      </script>
+    </section>
+
     <section data-markdown data-background-color="#fff">
       <script type="text/template">
-        ## How?
+        ## Tools
         
         <table class="no-border">
           <tr>
@@ -170,42 +179,7 @@
         
         
         <aside class="notes">
-
-        </aside>
-      </script>
-    </section>
-
-    <section data-markdown data-background-color="#fff">
-      <script type="text/template">
-        ## How?
-        <aside class="notes">
-
-        </aside>
-      </script>
-    </section>
-
-    <section
-      data-markdown 
-      data-background-color="#fff"
-      data-background-image="images/needle.jpg"
-    >
-      <script type="text/template">
-        ## How?
-        <aside class="notes">
-
-        </aside>
-      </script>
-    </section>
-
-    <section
-      data-markdown
-      data-background-color="#fff"
-      data-background-image="images/haystacks.jpg"
-    >
-      <script type="text/template">
-        ## stuff
-        <aside class="notes">
-
+          Git branching 
         </aside>
       </script>
     </section>
@@ -230,9 +204,59 @@
       </script>
     </section>
     
-    <section>
+    <section
+      data-markdown
+      data-background-image="images/trust_no_one.jpg"
+      class="text-on-light">
       <script type="text/template">
-        <h2 class="fragment">Security</h2>
+        <h2 class="fragment">Never Trust User Input</h2>
+        <p class="fragment">Sanitise Everything</p>
+        <p class="fragment">
+          [drupal.org/docs/7/security/writing-secure-code](https://www.drupal.org/docs/7/security/writing-secure-code)
+          [drupal.org/docs/8/security/writing-secure-code-for-drupal-8](https://www.drupal.org/docs/8/security/writing-secure-code-for-drupal-8)
+        </p>
+
+        <aside class="notes">
+          How and where are we storing user data?  
+          Is it sensitive data?  
+        </aside>
+      </script>
+    </section>
+
+    <section data-markdown data-background-image="images/speedometer.jpg">
+      <script type="text/template">
+        <h2 class="fragment">Performance</h2>
+        <p class="fragment">Unnecessary sessions?</p>
+        <p class="fragment">Caching</p>
+        <p class="fragment">Inefficient loops</p>
+        <p class="fragment"></p>
+        <aside class="notes"> </aside>
+      </script>
+    </section>
+
+    <section
+      data-markdown 
+      data-background-image="images/accessibility.jpg"
+      class="text-on-light"
+    >
+      <script type="text/template">
+        <h2 class="fragment">Accessibility</h2>
+        <p class="fragment">Keyboard users</p>
+        <p class="fragment">Hiding text appropriately?</p>
+        <p class="fragment">Hover and focus</p>
+        <p class="fragment"></p>
+        <aside class="notes"> </aside>
+      </script>
+    </section>
+
+    <section data-markdown data-background-image="images/men_at_work.jpg" class="text-on-light">
+      <script type="text/template">
+        <h2 class="fragment">Maintainability</h2>
+        <p class="fragment">Reinventing the wheel</p>
+        <p class="fragment">Appropriate API usage</p>
+        <p class="fragment">Unit test coverage</p>
+        <p class="fragment">Comments</p>
+        <aside class="notes"> </aside>
       </script>
     </section>
 
@@ -247,27 +271,19 @@
           Larry Garfield at DrupalCon London 2011  
           https://www.youtube.com/watch?v=Z78ZP_UtaKE
         </p>
+        <ul class="fragment">
+          <li class="fragment">And</li>
+          <li class="fragment">Or</li>
+          <li class="fragment">If</li>
+          <li class="fragment">Testability</li>
+          <li class="fragment">Documentation</li>
+          <li class="fragment">Tight Coupling</li>
+          <li class="fragment">Impurity</li>
+        </ul>
 
         <aside class="notes">
-          Larry Garfield
-        </aside>
-      </script>
-    </section>
-
-    <section
-      data-markdown
-      data-background-image="images/trust_no_one.jpg"
-      class="text-on-light">
-      <script type="text/template">
-        <h2 class="fragment">Never Trust User Input</h2>
-        <p class="fragment">Sanitise Everything</p>
-        <p class="fragment">
-          [drupal.org/docs/7/security/writing-secure-code](https://www.drupal.org/docs/7/security/writing-secure-code)  
-          [drupal.org/docs/8/security/writing-secure-code-for-drupal-8](https://www.drupal.org/docs/8/security/writing-secure-code-for-drupal-8)
-        </p>
-
-        <aside class="notes">
-
+          Not rules, but guidelines
+          
         </aside>
       </script>
     </section>
@@ -293,30 +309,51 @@
       </script>
     </section>
 
-    <section data-markdown>
+    <section
+      data-markdown
+      data-background-color="#fff"
+      data-background-image="images/needle.jpg"
+    >
       <script type="text/template">
-        ## Thank you
+        ## How?
+        <aside class="notes">
 
-        https://malcomio.github.io/presentations/code-review
-
-        [@malcomio](https://twitter.com/malcomio)
-
-        http://red-route.org
+        </aside>
       </script>
     </section>
 
-    <section data-markdown>
-      ## Image credits
-      * [Defect Graphs](http://www.tsphethean.co.uk/blog/2013/11/28/Reviewing-code-reviews/)
-      * [Needle](https://commons.wikimedia.org/wiki/File:Naehnadel.jpg)
-      * [Haystacks](https://commons.wikimedia.org/wiki/File:Hay_cocks_-_geograph.org.uk_-_1439469.jpg)
-      * [Trust No One](https://www.flickr.com/photos/lynnfriedman/6278971615)
-      * [Speak Your Mind](https://www.flickr.com/photos/wfryer/3242288624)
-      * [Alex Pott](https://twitter.com/pdjohnson/status/781489468008194049)
-      * [Binoculars](https://www.flickr.com/photos/cloresinparadise/3382640460)
-      * [Dogs](https://www.flickr.com/photos/steve-wilson/458703692)
-      * [Spaghetti](https://www.flickr.com/photos/stevendepolo/15817264281)
-      * [Learning](https://www.flickr.com/photos/cogdog/15905754123)
+    <section
+      data-markdown
+      data-background-color="#fff"
+      data-background-image="images/haystacks.jpg"
+    >
+      <script type="text/template">
+        ##
+        <aside class="notes">
+
+        </aside>
+      </script>
+    </section>
+
+    <section>
+      <h2>Image credits</h2>  
+      <div class="split-screen three-column">
+        <a href="http://www.tsphethean.co.uk/blog/2013/11/28/Reviewing-code-reviews/">Defect Graphs</a>
+        <a href="https://commons.wikimedia.org/wiki/File:Naehnadel.jpg">Needle</a>
+        <a href="https://commons.wikimedia.org/wiki/File:Hay_cocks_-_geograph.org.uk_-_1439469.jpg">Haystacks</a>
+        <a href="https://www.flickr.com/photos/lynnfriedman/6278971615">Trust No One</a>
+        <a href="https://www.flickr.com/photos/wfryer/3242288624">Speak Your Mind</a>
+        <a href="https://twitter.com/pdjohnson/status/781489468008194049">Alex Pott</a>
+        <a href="https://www.flickr.com/photos/cloresinparadise/3382640460">Binoculars</a>
+        <a href="https://www.flickr.com/photos/steve-wilson/458703692">Dogs</a>
+        <a href="https://www.flickr.com/photos/stevendepolo/15817264281">Spaghetti</a>
+        <a href="https://www.flickr.com/photos/cogdog/15905754123">Learning</a>
+        <a href="https://www.flickr.com/photos/sabertasche2/2609405516">How</a>
+        <a href="https://www.flickr.com/photos/hadamsky/293346840">Speedometer</a>
+        <a href="https://www.flickr.com/photos/otrops/4716966580">Accessibility</a>
+        <a href="https://www.flickr.com/photos/16210667@N02/9172895225">Men at Work</a>
+      
+      </div>
     </section>
 
     <section data-markdown>
@@ -332,6 +369,11 @@
       <script type="text/template">
         <img src="../images/capgemini_logo.svg" class="no-border"/>
         https://capgemini.github.io
+
+        https://malcomio.github.io/presentations/code-review
+
+        [@malcomio](https://twitter.com/malcomio)
+
         <aside class="notes">
 
         </aside>

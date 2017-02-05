@@ -339,6 +339,8 @@ body {
     height: 50%;
     margin: 0 !important;
     border: 0 !important; }
+  .split-screen.three-column > * {
+    width: 33%; }
 
 .reveal section .no-border,
 .reveal section.no-border {
