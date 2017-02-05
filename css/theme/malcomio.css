@@ -295,6 +295,9 @@ body {
   position: absolute;
   bottom: 20px; }
 
+.text-center {
+  text-align: center !important; }
+
 .text-on-dark h1,
 .text-on-dark h2,
 .text-on-dark h3,
@@ -336,10 +339,20 @@ body {
     margin: 0 !important;
     border: 0 !important; }
 
-.reveal section .no-border {
+.reveal section .no-border,
+.reveal section.no-border {
   background: none;
   border: none;
   box-shadow: none; }
+  .reveal section .no-border table,
+  .reveal section .no-border tr,
+  .reveal section .no-border td,
+  .reveal section .no-border img,
+  .reveal section.no-border table,
+  .reveal section.no-border tr,
+  .reveal section.no-border td,
+  .reveal section.no-border img {
+    border: none; }
 
 table.no-border {
   border: none; }
