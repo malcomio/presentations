@@ -314,6 +314,16 @@ body {
   background-color: rgba(0, 0, 0, 0.8);
   color: #FFF; }
 
+.text-on-dark ul,
+.text-on-light ul {
+  margin-left: 0;
+  padding: .5em; }
+
+.text-on-dark li,
+.text-on-light li {
+  list-style-position: inside;
+  padding-left: 1em; }
+
 .line-wrapper {
   display: flex;
   justify-content: space-between;

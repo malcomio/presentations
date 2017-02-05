@@ -1,19 +1,13 @@
 /**
  * A custom theme for Malcolm Young's reveal.js presentations
  */
-
-
 // Default mixins and settings -----------------
 @import "../template/mixins";
 @import "../template/settings";
 // ---------------------------------------------
-
-
-
 // Include theme-specific fonts
 @import url(https://fonts.googleapis.com/css?family=News+Cycle:400,700);
 @import url(https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic);
-
 
 // Override theme settings (see ../template/settings.scss)
 $mainFont: 'Lato', sans-serif;
@@ -24,15 +18,12 @@ $headingTextShadow: none;
 $headingTextTransform: none;
 $backgroundColor: #fff;
 $linkColor: #00008B;
-$linkColorHover: lighten( $linkColor, 20% );
+$linkColorHover: lighten($linkColor, 20%);
 $selectionBackgroundColor: rgba(0, 0, 0, 0.99);
-
-
 
 // Theme template ------------------------------
 @import "black";
 // ---------------------------------------------
-
 
 .footer {
   position: absolute;
@@ -43,21 +34,38 @@ $selectionBackgroundColor: rgba(0, 0, 0, 0.99);
   text-align: center !important;
 }
 
-.text-on-dark h1,
-.text-on-dark h2,
-.text-on-dark h3,
-.text-on-dark p,
-.text-on-dark ul {
-  background-color: rgba(255, 255, 255, 0.8);
+.text-on-dark {
+  h1,
+  h2,
+  h3,
+  p,
+  ul {
+    background-color: rgba(255, 255, 255, 0.8);
+  }
 }
 
-.text-on-light h1,
-.text-on-light h2,
-.text-on-light h3,
-.text-on-light p,
-.text-on-light ul {
-  background-color: rgba(0, 0, 0, 0.8);
-  color: #FFF;
+.text-on-light {
+  h1,
+  h2,
+  h3,
+  p,
+  ul {
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #FFF;
+  }
+}
+
+.text-on-dark,
+.text-on-light {
+  ul {
+    margin-left: 0;
+    padding: .5em;
+  }
+  
+  li {
+    list-style-position: inside;
+    padding-left: 1em;
+  }
 }
 
 .line-wrapper {
@@ -92,14 +100,14 @@ $selectionBackgroundColor: rgba(0, 0, 0, 0.99);
     margin: 0 !important;
     border: 0 !important;
   }
-  
+
   &.three-column > * {
     width: 33%;
   }
 }
 
 .reveal section .no-border,
-.reveal section.no-border{
+.reveal section.no-border {
   background: none;
   border: none;
   box-shadow: none;
@@ -123,7 +131,7 @@ table.no-border {
   &:before {
     content: open-quote;
   }
-  
+
   &:after {
     content: close-quote;
   }
