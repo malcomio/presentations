@@ -57,14 +57,14 @@
         https://malcomio.github.io/presentations/code-review
 
         <aside class="notes">
-
+          I'm not going to give you answers in this talk, but hopefully I'll help you ask the right questions  
         </aside>
       </script>
     </section>
 
-    <section data-markdown data-background-color="#fff">
+    <section data-background-image="images/why.jpg" data-background-color="#fff">
       <script type="text/template">
-        ## Why?
+        
         <aside class="notes">
           People think they don't have time  
           Not reviewing code is a false economy
@@ -99,7 +99,8 @@
         ## Improve maintainability
 
         <aside class="notes">
-          Long term projects - cost of maintenance
+          Long term projects - cost of maintenance  
+          Your future self will thank you  
         </aside>
       </script>
     </section>
@@ -193,16 +194,19 @@
       class="text-on-light"
     >
       <script type="text/template">
-        <h2 class="fragment">What Are We Looking For?</h2>
+        <h2>What Are We Looking For?</h2>
         <ul class="fragment">
           <li>Will It Work?</li>
-          <li>Security</li>
-          <li>Performance</li>
-          <li>Accessibility</li>
-          <li>Maintainability</li>
+          <li class="fragment">Security</li>
+          <li class="fragment">Performance</li>
+          <li class="fragment">Accessibility</li>
+          <li class="fragment">Maintainability</li>
         </ul>
         <aside class="notes">
           Some of the points in this talk are specific to Drupal, others less so
+          
+          Are you actually meeting the requirements?  
+          Are you making yourself vulnerable
         </aside>
       </script>
     </section>
@@ -220,8 +224,8 @@
         </p>
 
         <aside class="notes">
-          How and where are we storing user data?  
-          Is it sensitive data?  
+          How and where are we storing and transmitting user data?  
+          Is it sensitive data? Do we need to encrypt it?
         </aside>
       </script>
     </section>
@@ -267,6 +271,7 @@
 
         <aside class="notes">
           
+          Enough comments? Too many comments can sometimes become noise  
         </aside>
       </script>
     </section>
@@ -293,8 +298,12 @@
         </ul>
 
         <aside class="notes">
+          What is a code smell?  
+          A sign of possible problems.  
           Not rules, but guidelines
           a lot of these ideas are applicable to other languages - they don't change
+          
+          
         </aside>
       </script>
     </section>
@@ -334,24 +343,43 @@
         </aside>
       </script>
     </section>
+    
+    <section data-background-image="images/statler.jpg">
+      <script type="text/template">
+        <h2 class="fragment">Don't make it personal</h2>
+        <aside class="notes">
+          don't get personal  
+          How your team behaves towards each other 
+        </aside>
+      </script>
+    </section>
 
     <section
       data-background-image="images/haystacks.jpg"
       class="text-on-light"
     >
+      <h2 class="fragment">Small is Beautiful</h2>
       <div class="fragment">
-        <h2>Small is Beautiful</h2>
+        
         <blockquote class="twitter-tweet text-center" data-lang="en"><p lang="en" dir="ltr">10 lines of code = 10 issues.<br><br>500 lines of code = &quot;looks fine.&quot;<br><br>Code reviews.</p>&mdash; I Am Devloper (@iamdevloper) <a href="https://twitter.com/iamdevloper/status/397664295875805184">November 5, 2013</a></blockquote>
         <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
       </div>
         <aside class="notes">
-          Watch out for attention fatigue
+          Not so much about the review itself, but about the pull request.  
+          In the same way that long functions are a code smell, so are big pull requests  
+          Branching is easy with Git - if it's a big feature, create a feature branch, and review the code as it's being merged into that branch  
+          If you wait until the feature is ready to merge into your main branch, reviewing it will be a nightmare  
+          Review
+          Watch out for attention fatigue - it's difficult  
+          And that seems like an appropriate place to finish.
         </aside>
     </section>
 
     <section>
       <h2>Image credits</h2>  
       <div class="split-screen three-column">
+        <a href="https://www.flickr.com/photos/ksayer/5614813544">Why</a>
+        <a href="https://commons.wikimedia.org/wiki/File:Waldorf_Statler_Wall_Painting.jpg">Statler & Waldorf</a>
         <a href="http://www.tsphethean.co.uk/blog/2013/11/28/Reviewing-code-reviews/">Defect Graphs</a>
         <a href="https://commons.wikimedia.org/wiki/File:Naehnadel.jpg">Needle</a>
         <a href="https://commons.wikimedia.org/wiki/File:Hay_cocks_-_geograph.org.uk_-_1439469.jpg">Haystacks</a>
@@ -408,6 +436,7 @@
     history: true,
     center: true,
     showNotes: print,
+    slideNumber: 'c/t',
 
     transition: 'slide', // none/fade/slide/convex/concave/zoom
 
