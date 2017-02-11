@@ -296,8 +296,10 @@ body {
   position: absolute;
   bottom: 20px; }
 
-.text-center {
-  text-align: center !important; }
+.text-center,
+.text-center * {
+  text-align: center !important;
+  vertical-align: middle !important; }
 
 .text-on-dark h1,
 .text-on-dark h2,
