@@ -225,10 +225,22 @@
           <li class="fragment">Maintainability</li>
         </ul>
         <aside class="notes">
-          Some of the points in this talk are specific to Drupal, others less so
-          
+          Some of the points in this talk are specific to Drupal, others less so            
           Are you actually meeting the requirements?  
-          Are you making yourself vulnerable
+          Don't be afraid to check out the branch in your local environment and test it  
+          Lullabot built Tugboat to spin up test environment for every pull request  
+          Are you making yourself vulnerable?  
+          Are you causing problems for some of your users?  
+          Are you causing problems for your team in the future?  
+        </aside>
+      </script>
+    </section>
+    
+    <section data-markdown data-background-image="images/security.jpg">
+      <script type="text/template">
+        <p>&nbsp;</p>
+        <aside class="notes">
+          I don't claim to be an expert, but 
         </aside>
       </script>
     </section>
@@ -259,7 +271,10 @@
         <p class="fragment">Caching</p>
         <p class="fragment">Inefficient loops</p>
         <p class="fragment"></p>
-        <aside class="notes"> </aside>
+        <aside class="notes">
+          Try to minimise the work that the web server does  
+          Keep things cachable as much as possible  
+        </aside>
       </script>
     </section>
 
@@ -270,10 +285,11 @@
     >
       <script type="text/template">
         <h2 class="fragment">Accessibility</h2>
+        
         <p class="fragment">Keyboard users</p>
         <p class="fragment">Hiding text appropriately?</p>
         <p class="fragment">Hover and focus</p>
-        <p class="fragment"></p>
+        <p class="fragment">http://a11yproject.com/checklist.html</p>
         
         <aside class="notes">
           Getting accessibility right is difficult.
@@ -330,6 +346,32 @@
       </script>
     </section>
 
+    <section data-markdown data-background-image="images/speak_your_mind.jpg">
+      <script type="text/template">
+        <p>&nbsp;</p>
+        <aside class="notes">
+          Be frank, open and honest  
+          If you don't understand what a piece of code is doing, it probably says more about the code than it does about you   
+        </aside>
+      </script>
+    </section>
+
+    <section data-markdown data-background-image="images/statler.jpg" class="text-on-light">
+      <script type="text/template">
+        <h2 class="fragment">Don't make it personal</h2>
+        <aside class="notes">
+          We all make mistakes  
+          Writing bad code doesn't make you a bad person  
+          Code review isn't a competition - not a chance to snipe at each other  
+          You're a team - support each other  
+          Help colleagues improve - share links, ideas  
+          How your team behaves towards each other is as important as the quality of the work  
+          Don't just tell people when they're doing something wrong - point to examples of good code  
+          Get everyone involved - we can all learn from each other  
+        </aside>
+      </script>
+    </section>
+
     <section
       data-markdown
       data-background-image="images/automate.jpg"
@@ -337,41 +379,42 @@
       data-background-color="#FFF"
       class="text-on-light">
       <script type="text/template">
-        <p class="fragment">http://reload.github.io/jenkins-drupal-template/</p>
+        <p class="fragment">Set up your IDE:<br/>https://www.drupal.org/docs/develop/development-tools</p>
+        <p class="fragment">Pre-commit hooks:<br/>https://github.com/geraldvillorente/drupal-pre-commit</p>
+        <p class="fragment">Static analysis with Jenkins:<br/>http://reload.github.io/jenkins-drupal-template/</p>
         <aside class="notes">
-          builds
-          automated testing
+          I'm a big coding standards pedant - improve signal to noise in dev and code review  
+          But adding comments about whitespace is pretty tedious  
+          So get machines to do the boring work for you  
+          Integrate PHPCodeSniffer with your IDE  
+          Pre-commit hooks  
+          Integrate your CI server with your pull requests  
+          If the unit tests fail, the code doesn't get merged  
+          If it breaks coding standards, the code doesn't get merged  
+          If it is horrendously complex, the code doesn't get merged  
 
           appropriate level depends on size of your team
-
-          pull requests - unit testing, checkstyle
-
-          Why coding standards?
         </aside>
       </script>
     </section>
 
     <section
       data-markdown
-      data-background-color="#fff"
-      data-background-image="images/needle.jpg"
+      data-background-image="images/custom.jpg"
+      class="text-on-light"
     >
       <script type="text/template">
-        ## How?
+        ## Custom v contrib
+
         <aside class="notes">
-          ### Custom v contrib
-          There's a module for that
-          But is it appropriate?
-        </aside>
-      </script>
-    </section>
-    
-    <section data-background-image="images/statler.jpg">
-      <script type="text/template">
-        <h2 class="fragment">Don't make it personal</h2>
-        <aside class="notes">
-          don't get personal  
-          How your team behaves towards each other 
+          Drupal people often say "There's a module for that"  
+          But is it appropriate?  
+          When you add contrib modules, review them like you'd review custom code  
+          Often the contrib module is like a Swiss Army knife - multipurpose, but not optimised for your specific use case  
+          Maybe you just want a simple, efficient tool  
+          When you review custom code, should a contrib module be used instead?  
+          Should the custom module be made generic, and contributed?  
+          We try to do this where possible at Capgemini  
         </aside>
       </script>
     </section>
@@ -381,8 +424,7 @@
       class="text-on-light"
     >
       <h2 class="fragment">Small is Beautiful</h2>
-      <div class="fragment">
-        
+      <div class="fragment text-center no-background">
         <blockquote class="twitter-tweet text-center" data-lang="en"><p lang="en" dir="ltr">10 lines of code = 10 issues.<br><br>500 lines of code = &quot;looks fine.&quot;<br><br>Code reviews.</p>&mdash; I Am Devloper (@iamdevloper) <a href="https://twitter.com/iamdevloper/status/397664295875805184">November 5, 2013</a></blockquote>
         <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
       </div>
@@ -391,8 +433,10 @@
           In the same way that long functions are a code smell, so are big pull requests  
           Branching is easy with Git - if it's a big feature, create a feature branch, and review the code as it's being merged into that branch  
           If you wait until the feature is ready to merge into your main branch, reviewing it will be a nightmare  
-          Review
-          Watch out for attention fatigue - it's difficult  
+          Watch out for attention fatigue - it's difficult to review large changes  
+          If you give people too much information, they'll struggle.  
+          Cognitive load of reviewing large change means reviewers are less likely to spot problems.  
+          Code review requires concentration, and it's difficult to concentrate for a long time.  
           And that seems like an appropriate place to finish.
         </aside>
     </section>
@@ -400,22 +444,25 @@
     <section>
       <h2>Image credits</h2>  
       <div class="split-screen three-column">
+        <a href="https://www.flickr.com/photos/hagengraf/6520777613">Pull request</a>
         <a href="https://www.flickr.com/photos/ksayer/5614813544">Why</a>
-        <a href="https://commons.wikimedia.org/wiki/File:Waldorf_Statler_Wall_Painting.jpg">Statler & Waldorf</a>
         <a href="http://www.tsphethean.co.uk/blog/2013/11/28/Reviewing-code-reviews/">Defect Graphs</a>
-        <a href="https://commons.wikimedia.org/wiki/File:Naehnadel.jpg">Needle</a>
-        <a href="https://commons.wikimedia.org/wiki/File:Hay_cocks_-_geograph.org.uk_-_1439469.jpg">Haystacks</a>
-        <a href="https://www.flickr.com/photos/lynnfriedman/6278971615">Trust No One</a>
-        <a href="https://www.flickr.com/photos/wfryer/3242288624">Speak Your Mind</a>
-        <a href="https://twitter.com/pdjohnson/status/781489468008194049">Alex Pott</a>
-        <a href="https://www.flickr.com/photos/cloresinparadise/3382640460">Binoculars</a>
-        <a href="https://www.flickr.com/photos/steve-wilson/458703692">Dogs</a>
         <a href="https://www.flickr.com/photos/stevendepolo/15817264281">Spaghetti</a>
         <a href="https://www.flickr.com/photos/cogdog/15905754123">Learning</a>
+        <a href="https://twitter.com/pdjohnson/status/781489468008194049">Alex Pott</a>
         <a href="https://www.flickr.com/photos/sabertasche2/2609405516">How</a>
+        <a href="https://www.flickr.com/photos/cloresinparadise/3382640460">Binoculars</a>
+        <a href="https://pixabay.com/en/police-security-safety-protection-869216/">Security</a>
+        <a href="https://www.flickr.com/photos/lynnfriedman/6278971615">Trust No One</a>
         <a href="https://www.flickr.com/photos/hadamsky/293346840">Speedometer</a>
         <a href="https://www.flickr.com/photos/otrops/4716966580">Accessibility</a>
         <a href="https://www.flickr.com/photos/16210667@N02/9172895225">Men at Work</a>
+        <a href="https://www.flickr.com/photos/steve-wilson/458703692">Dogs</a>
+        <a href="https://www.flickr.com/photos/wfryer/3242288624">Speak Your Mind</a>
+        <a href="https://commons.wikimedia.org/wiki/File:Waldorf_Statler_Wall_Painting.jpg">Statler & Waldorf</a>
+        <a href="https://memegenerator.net/instance/9449708">Automate</a>
+        <a href="https://commons.wikimedia.org/wiki/File:Custom_Car_Abandoned.jpg">Custom</a>
+        <a href="https://commons.wikimedia.org/wiki/File:Hay_cocks_-_geograph.org.uk_-_1439469.jpg">Haystacks</a>
       </div>
     </section>
 
