@@ -57,16 +57,34 @@
         https://malcomio.github.io/presentations/code-review
 
         <aside class="notes">
-          I'm not going to give you answers in this talk, but hopefully I'll help you ask the right questions  
+          I'm not going to give you all the answers in this talk, but hopefully I'll help you ask the right questions  
+          First question is a basic one...  
         </aside>
       </script>
     </section>
 
-    <section data-background-image="images/why.jpg" data-background-color="#fff">
+    <section data-markdown>
       <script type="text/template">
+        ## What is Code Review?
+        
+        <img src="images/joomla.jpg" class="fragment"/>
+
+        <aside class="notes">
+          Once upon a time, it meant a meeting where the team would sit and read code together line by line, either printed out or on screen  
+          Sounds pretty tedious, right?  
+          These days, it doesn't have to be like that            
+          Git - create a branch, commit some changes, create a pull request
+        </aside>
+      </script>
+    </section>
+
+    <section data-markdown data-background-image="images/why.jpg" data-background-color="#fff">
+      <script type="text/template">
+        <p>&nbsp;</p>
         
         <aside class="notes">
-          People think they don't have time  
+          Some people think they don't have time  
+          Project manager breathing down your neck, need to get features out of the door  
           Not reviewing code is a false economy
           Any manager who says it isn't good value - show them this graph  
         </aside>
@@ -83,9 +101,10 @@
         ## Prevent bugs
 
         <aside class="notes">
-          2 Graphs from large project a few years ago
-          Direct correlation between increase in code review and decrease in bugs
-
+          2 Graphs from large project a few years ago  
+          Direct correlation between increase in code review and decrease in bugs reported  
+          If you care about quality, you should be doing code review  
+          IMO, almost as important as testing  
         </aside>
       </script>
     </section>
@@ -100,7 +119,7 @@
 
         <aside class="notes">
           Long term projects - cost of maintenance  
-          Your future self will thank you  
+          Your future self will thank you, and so will colleagues  
         </aside>
       </script>
     </section>
@@ -113,14 +132,12 @@
         <p>&nbsp;</p>
 
         <aside class="notes">
-          learning opportunity  
-          I've learned so much from code reviews, thanks to colleagues, senior and junior
           Along with pair programming, it's a great learning resource  
-          Other people's code, other people's opinions on code
-          Everyone has something to contribute - code review isn't a one way street, with seniors telling juniors how it should be done
-          Suggestions for improvements
+          Other people's code, other people's opinions on code  
+          Everyone has something to contribute - code review isn't a one way street, with seniors telling juniors how it should be done  
+          Suggestions for improvements  
           Better ways of doing things
-
+          I've learned so much from code reviews, thanks to colleagues, senior and junior  
         </aside>
       </script>
     </section>
@@ -139,10 +156,10 @@
         </table>
         <aside class="notes">
           In the Drupal community, there are a lot of reasons to say thanks to Alex Pott.  
-          Within the Drupal team at Capgemini, 
-          He pushed for our team to make code review part of our process  
+          Within the Drupal team at Capgemini,  
+          He pushed for our team to make code review part of our process    
           
-          Not everyone is lucky enough to work with people like Alex, but 
+          Not everyone is lucky enough to work with people like Alex, but  
         </aside>
     </section>
     
@@ -153,8 +170,8 @@
         
         <aside class="notes">
           Everybody makes mistakes 
-          Even if it's 
-          No matter how senior you are, how much experience you have, 
+          Even Alex  
+          No matter how senior you are, how much experience you have,  
           Even if you're working on your own, it's useful to review your code  
           Looking at the difference in a different context can help you to see it in a new light, and spot potential problems
         </aside>
@@ -165,7 +182,8 @@
       <script type="text/template">
         <p></p>
         <aside class="notes">
-          
+          Hopefully I've convinced you that it's worth doing code review  
+          So 
         </aside>
       </script>
     </section>
@@ -174,16 +192,20 @@
       <script type="text/template">
         ## Tools
         
-        <table class="no-border">
+        <table class="no-border text-center">
           <tr>
             <td><img class="no-border" src="images/GitHub_Logo.png"/></td>
-            <td><img class="no-border" src="images/bitbucket_rgb_blue.svg"/></td>
+            <td><img class="no-border" src="images/bitbucket_rgb_blue.png"/></td>
           </tr>
         </table>
         
         
         <aside class="notes">
-          Git branching 
+          Git branching  
+          Approvals  
+          Team shares responsibility for quality  
+          Can't just blame an individual  
+          Set tasks  
         </aside>
       </script>
     </section>
