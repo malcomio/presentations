@@ -908,7 +908,7 @@
 
 		dom.controls.style.display = config.controls ? 'block' : 'none';
 		dom.progress.style.display = config.progress ? 'block' : 'none';
-		dom.slideNumber.style.display = config.slideNumber && !isPrintingPDF() ? 'block' : 'none';
+		dom.slideNumber.style.display = config.slideNumber && !isPrintingPDF() && isSpeakerNotes() ? 'block' : 'none';
 
 		if( config.shuffle ) {
 			shuffle();
