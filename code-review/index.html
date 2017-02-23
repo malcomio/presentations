@@ -67,15 +67,53 @@
       <script type="text/template">
         ## What is Code Review?
         
-        <img src="images/joomla.jpg" class="fragment"/>
-
+        <img src="images/wtfm.jpg" class="fragment"/>
+        
         <aside class="notes">
           Once upon a time, it meant a meeting where the team would sit and read code together line by line, either printed out or on screen  
+          Fagan inspection  
+          Most blog posts on the subject use this cartoon, so who am I to go against tradition?  
           Sounds pretty tedious, right?  
-          These days, it doesn't have to be like that            
-          Git - create a branch, commit some changes, create a pull request
         </aside>
       </script>
+    </section>
+    
+    <section data-markdown>
+      <script type="text/template">
+        ## A better way to do it
+
+        <img src="images/joomla.jpg" class="fragment"/>
+
+        <p class="fragment">https://www.atlassian.com/git/tutorials/comparing-workflows</p>
+        <aside class="notes">
+          These days, it doesn't have to be like that  
+          Git - create a branch, commit some changes, create a pull request  
+          See the changes and review them  
+          Atlassian - info on different Git workflows  
+          Before I go further, I want to say thank you to this man.
+        </aside>
+      </script>
+    </section>
+
+    <section class="no-border">
+      <table>
+      <tr>
+      <td><img src="images/alex_pott.jpg" /></td>
+      </tr>
+      <tr>
+      <td class="text-center"><h2>Thanks Alex</h2></td>
+    </tr>
+    <tr>
+    <td></td>
+    </tr>
+    </table>
+    <aside class="notes">
+      In the Drupal community, there are a lot of reasons to say thanks to Alex Pott.  
+      Having worked with him a few years ago at Capgemini,  
+      He pushed for our team to make code review part of our process  
+      He also set a high standard  
+      Not everyone is lucky enough to work with people like Alex, but  
+    </aside>
     </section>
 
     <section data-markdown data-background-image="images/why.jpg" data-background-color="#fff">
@@ -83,10 +121,26 @@
         <p>&nbsp;</p>
         
         <aside class="notes">
-          Some people think they don't have time  
+          Isn't it just a waste of time?  
           Project manager breathing down your neck, need to get features out of the door  
-          Not reviewing code is a false economy
-          Any manager who says it isn't good value - show them this graph  
+          We all competent developers, aren't we?  
+        </aside>
+      </script>
+    </section>
+
+    <section  data-markdown>
+      <script type="text/template">
+        <blockquote>one who makes no mistakes makes nothing</blockquote>
+        Giacomo Casanova
+
+        <aside class="notes">
+          Everybody makes mistakes  
+          Even Alex  
+          No matter how senior you are, how much experience you have,  
+          Even if you're working on your own, it's useful to review your code  
+          Looking at the difference in a different context can help you to see it in a new light, and spot potential problems  
+          Not reviewing code is a false economy    
+          Any manager who says it isn't good value - show them this graph    
         </aside>
       </script>
     </section>
@@ -132,6 +186,7 @@
         <p>&nbsp;</p>
 
         <aside class="notes">
+          Other big reason for doing code review is what you learn  
           Along with pair programming, it's a great learning resource  
           Other people's code, other people's opinions on code  
           Everyone has something to contribute - code review isn't a one way street, with seniors telling juniors how it should be done  
@@ -141,61 +196,28 @@
         </aside>
       </script>
     </section>
-    
-    <section class="no-border">       
-        <table>
-          <tr>
-            <td><img src="images/alex_pott.jpg" /></td>
-          </tr>
-          <tr>
-            <td class="text-center"><h2>Thanks Alex</h2></td>
-          </tr>
-          <tr>
-            <td></td>
-          </tr>
-        </table>
-        <aside class="notes">
-          In the Drupal community, there are a lot of reasons to say thanks to Alex Pott.  
-          Within the Drupal team at Capgemini,  
-          He pushed for our team to make code review part of our process    
-          
-          Not everyone is lucky enough to work with people like Alex, but  
-        </aside>
-    </section>
-    
-    <section  data-markdown>
-      <script type="text/template">
-        <blockquote>one who makes no mistakes makes nothing</blockquote>  
-        Giacomo Casanova
-        
-        <aside class="notes">
-          Everybody makes mistakes 
-          Even Alex  
-          No matter how senior you are, how much experience you have,  
-          Even if you're working on your own, it's useful to review your code  
-          Looking at the difference in a different context can help you to see it in a new light, and spot potential problems
-        </aside>
-      </script>
-    </section>
 
-    <section data-background-image="images/how.jpg">
+    <section data-markdown data-background-image="images/how.jpg">
       <script type="text/template">
-        <p></p>
+        <p>&nbsp;</p>
         <aside class="notes">
           Hopefully I've convinced you that it's worth doing code review  
-          So 
+          So how do you do it?  
         </aside>
       </script>
     </section>
 
     <section data-markdown data-background-color="#fff">
       <script type="text/template">
-        ## Tools
+        ## Tools for the job
         
         <table class="no-border text-center">
-          <tr>
+          <tr class="fragment">
             <td><img class="no-border" src="images/GitHub_Logo.png"/></td>
             <td><img class="no-border" src="images/bitbucket_rgb_blue.png"/></td>
+          </tr>
+          <tr class="fragment">
+            <td colspan="2"><img src="images/approved.png"/></td>
           </tr>
         </table>
         
@@ -225,11 +247,13 @@
           <li class="fragment">Maintainability</li>
         </ul>
         <aside class="notes">
-          Some of the points in this talk are specific to Drupal, others less so            
+          Some of the points in this talk are specific to Drupal, others less so  
           Are you actually meeting the requirements?  
+          Edge cases?  
           Don't be afraid to check out the branch in your local environment and test it  
           Lullabot built Tugboat to spin up test environment for every pull request  
           Are you making yourself vulnerable?  
+          Are you making the site slower?  
           Are you causing problems for some of your users?  
           Are you causing problems for your team in the future?  
         </aside>
@@ -240,7 +264,7 @@
       <script type="text/template">
         <p>&nbsp;</p>
         <aside class="notes">
-          I don't claim to be an expert, but 
+          I don't claim to be an expert, but a few rules of thumb...
         </aside>
       </script>
     </section>
@@ -444,6 +468,7 @@
     <section>
       <h2>Image credits</h2>  
       <div class="split-screen three-column">
+        <a href="http://www.osnews.com/story/19266/WTFs_m">WTFs per minute</a>
         <a href="https://www.flickr.com/photos/hagengraf/6520777613">Pull request</a>
         <a href="https://www.flickr.com/photos/ksayer/5614813544">Why</a>
         <a href="http://www.tsphethean.co.uk/blog/2013/11/28/Reviewing-code-reviews/">Defect Graphs</a>
