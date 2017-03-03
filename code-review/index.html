@@ -293,8 +293,10 @@
 
         <aside class="notes">
           XSS - if an attacker can execute JS or SQL injection, they can own your site  
+          What sort of data are we getting from users?
+          Is it sensitive data?  
           How and where are we storing and transmitting user data?  
-          Is it sensitive data? Do we need to encrypt it?
+          Do we need to encrypt it?
         </aside>
       </script>
     </section>
@@ -373,11 +375,16 @@
         <aside class="notes">
           What is a code smell?  
           A sign of possible problems.  
-          Not rules, but guidelines  
-          a lot of these ideas are applicable to other languages  
+          Not rules, but guidelines
+          These ideas are also applicable to other languages  
+          I learned from Larry in Croydon - 7 common code smells  
           And - Functions that do too much  
           Or - functions that sometimes do different things  
           If - excessive complexity  
+          Testability - can it be tested? if not, bad sign  
+          Docs - comments  
+          Tight Coupling - dependent on other parts of system  
+          Impurity - side effects plus return values  
         </aside>
       </script>
     </section>
@@ -398,7 +405,7 @@
           Maybe you just want a simple, efficient tool  
           When you review custom code, should a contrib module be used instead?  
           Should the custom module be made generic, and contributed?  
-          We try to do this where possible at Capgemini  
+          We try to do this where possible at Capgemini - Stomp, Route    
         </aside>
       </script>
     </section>
@@ -407,9 +414,10 @@
       <script type="text/template">
         <p>&nbsp;</p>
         <aside class="notes">
+          A few points about the way to do code reviews  
           If you see a problem, speak up  
           Don't keep quiet because you're junior or unconfident  
-          If you don't understand what a piece of code is doing, it probably says more about the code than it does about you
+          If you don't understand what a piece of code is doing, it probably says more about the code than it does about you  
           Be frank, open and honest  
         </aside>
       </script>
@@ -419,14 +427,16 @@
       <script type="text/template">
         <h2 class="fragment">Don't make it personal</h2>
         <aside class="notes">
-          We all make mistakes  
+          We're reviewing the code, not the coder  
+          We all make mistakes - that's how we learn  
           Writing bad code doesn't make you a bad person  
           Code review isn't a competition - not a chance to snipe at each other  
           You're a team - support each other  
           Help colleagues improve - share links, ideas  
-          How your team behaves towards each other is as important as the quality of the work  
           Don't just tell people when they're doing something wrong - point to examples of good code  
-          Get everyone involved - we can all learn from each other  
+          Get everyone involved - we can all learn from each other
+          How your team behaves towards each other is as important as the quality of the work  
+          Remember that your colleagues are human  
         </aside>
       </script>
     </section>
@@ -445,14 +455,13 @@
           I'm a big coding standards pedant - improve signal to noise in dev and code review  
           But adding comments about whitespace is pretty tedious  
           So get machines to do the boring work for you  
+          appropriate level depends on size of your team  
           Integrate PHPCodeSniffer with your IDE  
           Pre-commit hooks  
-          Integrate your CI server with your pull requests  
-          If the unit tests fail, the code doesn't get merged  
+          Integrate your CI server with your pull requests
           If it breaks coding standards, the code doesn't get merged  
+          If the unit tests fail, the code doesn't get merged  
           If it is horrendously complex, the code doesn't get merged  
-
-          appropriate level depends on size of your team
         </aside>
       </script>
     </section>
