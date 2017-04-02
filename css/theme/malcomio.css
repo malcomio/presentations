@@ -396,3 +396,12 @@ table.no-border {
   box-shadow: none;
   text-transform: uppercase;
   font-size: 1.6em; }
+
+.reveal blockquote.twitter-tweet {
+  font-size: 1em;
+  background: white;
+  color: black; }
+  .reveal blockquote.twitter-tweet p {
+    display: block; }
+  .reveal blockquote.twitter-tweet a {
+    display: block; }

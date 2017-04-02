@@ -158,3 +158,16 @@ table.no-border {
   font-size: 1.6em;
 }
 
+.reveal blockquote.twitter-tweet {
+  font-size: 1em;
+  background: white;
+  color: black;
+  
+  p {
+    display: block;
+  }
+
+  a {
+    display: block;
+  }
+}

@@ -257,7 +257,7 @@
           <li class="fragment">Maintainability</li>
         </ul>
         <aside class="notes">
-          Some of the points in this talk are specific to Drupal, others less so
+          Some of the points in this talk are specific to Drupal, others less so  
           Will it work - specific to your project, so I can't say much on that  
           Are you actually meeting the requirements?  
           Edge cases?  
@@ -302,9 +302,9 @@
       </script>
     </section>
 
-    <section data-markdown data-background-image="images/speedometer.jpg" class="text-on-light">
+    <section data-markdown data-background-image="images/speedometer.jpg" class="text-on-light" data-autoslide="1500" data-transition="fade-in">
       <script type="text/template">
-        <h2 class="fragment">Performance</h2>
+        <h2 class="fragment" data-autoslide="0">Performance</h2>
         <p class="fragment">Unnecessary sessions?</p>
         <p class="fragment">Caching</p>
         <p class="fragment">Inefficient loops</p>
@@ -322,7 +322,7 @@
       class="text-on-light"
     >
       <script type="text/template">
-        <h2 class="fragment">Accessibility</h2>
+        <h2>Accessibility</h2>
         
         <p class="fragment">Keyboard users</p>
         <p class="fragment">Hiding text appropriately?</p>
@@ -358,7 +358,7 @@
       class="text-on-light"
     >
       <script type="text/template">
-        <h2 class="fragment">Code smells</h2>
+        <h2>Code smells</h2>
         <p class="fragment">
           Larry Garfield at DrupalCon London 2011  
           https://www.youtube.com/watch?v=Z78ZP_UtaKE
@@ -473,7 +473,7 @@
     >
       <h2 class="fragment">Small is Beautiful</h2>
       <div class="fragment text-center no-background">
-        <blockquote class="twitter-tweet text-center" data-lang="en"><p lang="en" dir="ltr">10 lines of code = 10 issues.<br><br>500 lines of code = &quot;looks fine.&quot;<br><br>Code reviews.</p>&mdash; I Am Devloper (@iamdevloper) <a href="https://twitter.com/iamdevloper/status/397664295875805184">November 5, 2013</a></blockquote>
+        <blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">10 lines of code = 10 issues.<br>500 lines of code = &quot;looks fine&quot;.<br>Code reviews.</p>&mdash; Michal Konturek (@MichalKonturek) <a href="https://twitter.com/MichalKonturek/status/612867076718526464">June 22, 2015</a></blockquote>
         <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
       </div>
         <aside class="notes">
@@ -549,8 +549,8 @@
 
   // More info https://github.com/hakimel/reveal.js#configuration
   Reveal.initialize({
-    controls: true,
-    progress: true,
+    controls: false,
+    progress: false,
     history: true,
     center: true,
     showNotes: print,
