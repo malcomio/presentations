@@ -30,7 +30,7 @@
 
     link.rel = 'stylesheet';
     link.type = 'text/css';
-    link.href = print ? '/css/print/pdf.css' : '/css/print/paper.css';
+    link.href = print ? '../css/print/pdf.css' : '../css/print/paper.css';
     document.getElementsByTagName('head')[0].appendChild(link);
   </script>
 
@@ -48,8 +48,8 @@
         # Everyone's A Critic
         ## The Why And How of Code Review
 
-        Malcolm Young  
-        Senior Software Engineer  
+        Malcolm Young
+        Senior Software Engineer
         <img src="../images/capgemini_logo.svg" class="no-border" width="300"/>
 
         [@malcomio](https://twitter.com/malcomio)
@@ -57,10 +57,10 @@
         https://malcomio.github.io/presentations/code-review
 
         <aside class="notes">
-          Large teams, small teams, even solo workers  
-          I'm not going to give you all the answers in this talk, but hopefully I'll help you ask the right questions  
-          Invite questions as we go, time at end  
-          First question is a basic one...  
+          Large teams, small teams, even solo workers
+          I'm not going to give you all the answers in this talk, but hopefully I'll help you ask the right questions
+          Invite questions as we go, time at end
+          First question is a basic one...
         </aside>
       </script>
     </section>
@@ -68,18 +68,18 @@
     <section data-markdown>
       <script type="text/template">
         ## What is Code Review?
-        
+
         <img src="images/wtfm.jpg" class="fragment"/>
-        
+
         <aside class="notes">
-          Once upon a time, it meant a meeting where the team would sit and read code together line by line, either printed out or on screen  
-          Fagan inspection  
-          Most blog posts on the subject use this cartoon, so who am I to go against tradition?  
-          Sounds pretty tedious, right?  
+          Once upon a time, it meant a meeting where the team would sit and read code together line by line, either printed out or on screen
+          Fagan inspection
+          Most blog posts on the subject use this cartoon, so who am I to go against tradition?
+          Sounds pretty tedious, right?
         </aside>
       </script>
     </section>
-    
+
     <section data-markdown>
       <script type="text/template">
         ## Pull Requests
@@ -88,11 +88,11 @@
 
         <p class="fragment">https://www.atlassian.com/git/tutorials/comparing-workflows</p>
         <aside class="notes">
-          These days, it doesn't have to be like that  
-          Git - create a branch, commit some changes, create a pull request  
-          See the changes and review them  
-          Joomla image at Drupal event  
-          Atlassian - info on different Git workflows  
+          These days, it doesn't have to be like that
+          Git - create a branch, commit some changes, create a pull request
+          See the changes and review them
+          Joomla image at Drupal event
+          Atlassian - info on different Git workflows
           Before I go further, I want to say thank you to this man.
         </aside>
       </script>
@@ -111,9 +111,9 @@
     </tr>
     </table>
     <aside class="notes">
-      In the Drupal community, there are a lot of reasons to say thanks to Alex Pott.<br/>  
+      In the Drupal community, there are a lot of reasons to say thanks to Alex Pott.<br/>
       Having worked with him a few years ago at Capgemini, he's had a big influence, especially relating to code review <br/>
-      He pushed for our team to make code review part of our process<br/>  
+      He pushed for our team to make code review part of our process<br/>
       He also set a high standard -  <br/>
       Not everyone is lucky enough to work with people like Alex, but<br/>
       Now as a core maintainer, he does even more code review.
@@ -123,12 +123,12 @@
     <section data-markdown data-background-image="images/why.jpg" data-background-color="#fff">
       <script type="text/template">
         <p>&nbsp;</p>
-        
+
         <aside class="notes">
-          Isn't it just a waste of time?  
+          Isn't it just a waste of time?
           Project manager breathing down your neck, need to get features out of the door on time
-          keep client happy    
-          We're all competent developers, aren't we?  
+          keep client happy
+          We're all competent developers, aren't we?
         </aside>
       </script>
     </section>
@@ -139,14 +139,14 @@
         Giacomo Casanova
 
         <aside class="notes">
-          Everybody makes mistakes  
-          Even Alex  
-          No matter how senior you are, how much experience you have,  
-          Even if you're working on your own, it's useful to review your code  
-          Diff before commit  
-          Looking at the difference in a different context can help you to see it in a new light, and spot potential problems  
-          Not reviewing code is a false economy    
-          Any manager who says it isn't good value - show them this graph    
+          Everybody makes mistakes
+          Even Alex
+          No matter how senior you are, how much experience you have,
+          Even if you're working on your own, it's useful to review your code
+          Diff before commit
+          Looking at the difference in a different context can help you to see it in a new light, and spot potential problems
+          Not reviewing code is a false economy
+          Any manager who says it isn't good value - show them this graph
         </aside>
       </script>
     </section>
@@ -161,13 +161,13 @@
         ## Prevent bugs
 
         <aside class="notes">
-          2 Graphs from large project a few years ago  
-          SVN - code review coverage  
-          Direct correlation between increase in code review and decrease in bugs reported  
-          If you care about quality, you should be doing code review  
-          IMO, almost as important as testing  
-          Spot and fix problems before they go live, improve team efficiency  
-          Happy clients  
+          2 Graphs from large project a few years ago
+          SVN - code review coverage
+          Direct correlation between increase in code review and decrease in bugs reported
+          If you care about quality, you should be doing code review
+          IMO, almost as important as testing
+          Spot and fix problems before they go live, improve team efficiency
+          Happy clients
         </aside>
       </script>
     </section>
@@ -181,8 +181,8 @@
         ## Improve maintainability
 
         <aside class="notes">
-          Long term projects - cost of maintenance will outweigh cost of build  
-          Your future self will thank you, and so will colleagues  
+          Long term projects - cost of maintenance will outweigh cost of build
+          Your future self will thank you, and so will colleagues
         </aside>
       </script>
     </section>
@@ -195,14 +195,14 @@
         <p>&nbsp;</p>
 
         <aside class="notes">
-          Other big reason for doing code review is what you learn  
-          Along with pair programming, it's a great learning resource  
-          Other people's code, other people's opinions on code  
-          Everyone has something to contribute  
-          code review isn't a one way street, with seniors telling juniors how it should be done  
-          Suggestions for improvements  
-          Better ways of doing things  
-          I've learned so much from code reviews, thanks to colleagues, senior and junior  
+          Other big reason for doing code review is what you learn
+          Along with pair programming, it's a great learning resource
+          Other people's code, other people's opinions on code
+          Everyone has something to contribute
+          code review isn't a one way street, with seniors telling juniors how it should be done
+          Suggestions for improvements
+          Better ways of doing things
+          I've learned so much from code reviews, thanks to colleagues, senior and junior
         </aside>
       </script>
     </section>
@@ -211,8 +211,8 @@
       <script type="text/template">
         <p>&nbsp;</p>
         <aside class="notes">
-          Hopefully I've convinced you that it's worth doing code review  
-          So how do you do it?  
+          Hopefully I've convinced you that it's worth doing code review
+          So how do you do it?
         </aside>
       </script>
     </section>
@@ -220,7 +220,7 @@
     <section data-markdown data-background-color="#fff">
       <script type="text/template">
         ## Tools for the job
-        
+
         <table class="no-border text-center">
           <tr class="fragment">
             <td><img class="no-border" src="images/GitHub_Logo.png"/></td>
@@ -230,14 +230,14 @@
             <td colspan="2"><img src="images/approved.png"/></td>
           </tr>
         </table>
-        
-        
+
+
         <aside class="notes">
-          Git branching  
-          Approvals  
-          Team shares responsibility for quality  
-          Can't just blame an individual  
-          Set tasks  
+          Git branching
+          Approvals
+          Team shares responsibility for quality
+          Can't just blame an individual
+          Set tasks
         </aside>
       </script>
     </section>
@@ -257,20 +257,20 @@
           <li class="fragment">Maintainability</li>
         </ul>
         <aside class="notes">
-          Some of the points in this talk are specific to Drupal, others less so  
-          Will it work - specific to your project, so I can't say much on that  
-          Are you actually meeting the requirements?  
-          Edge cases?  
-          Don't be afraid to check out the branch in your local environment and test it  
-          Lullabot built Tugboat to spin up test environment for every pull request  
-          Are you making yourself vulnerable?  
-          Are you making the site slower?  
-          Are you causing problems for some of your users?  
-          Are you causing problems for your team in the future?  
+          Some of the points in this talk are specific to Drupal, others less so
+          Will it work - specific to your project, so I can't say much on that
+          Are you actually meeting the requirements?
+          Edge cases?
+          Don't be afraid to check out the branch in your local environment and test it
+          Lullabot built Tugboat to spin up test environment for every pull request
+          Are you making yourself vulnerable?
+          Are you making the site slower?
+          Are you causing problems for some of your users?
+          Are you causing problems for your team in the future?
         </aside>
       </script>
     </section>
-    
+
     <section data-markdown data-background-image="images/security.jpg">
       <script type="text/template">
         <p>&nbsp;</p>
@@ -279,7 +279,7 @@
         </aside>
       </script>
     </section>
-    
+
     <section
       data-markdown
       data-background-image="images/trust_no_one.jpg"
@@ -293,10 +293,10 @@
         </p>
 
         <aside class="notes">
-          XSS - if an attacker can execute JS or SQL injection, they can own your site  
+          XSS - if an attacker can execute JS or SQL injection, they can own your site
           What sort of data are we getting from users?
-          Is it sensitive data?  
-          How and where are we storing and transmitting user data?  
+          Is it sensitive data?
+          How and where are we storing and transmitting user data?
           Do we need to encrypt it?
         </aside>
       </script>
@@ -310,29 +310,29 @@
         <p class="fragment">Inefficient loops</p>
         <p class="fragment"></p>
         <aside class="notes">
-          Try to minimise the work that the web server does  
-          Keep things cachable as much as possible  
+          Try to minimise the work that the web server does
+          Keep things cachable as much as possible
         </aside>
       </script>
     </section>
 
     <section
-      data-markdown 
+      data-markdown
       data-background-image="images/accessibility.jpg"
       class="text-on-light"
     >
       <script type="text/template">
         <h2>Accessibility</h2>
-        
+
         <p class="fragment">Keyboard users</p>
         <p class="fragment">Hiding text appropriately?</p>
         <p class="fragment">Hover and focus</p>
         <p class="fragment">http://a11yproject.com/checklist.html</p>
-        
+
         <aside class="notes">
-          Getting accessibility right is difficult.  
-          Knowing how to apply appropriate ARIA roles takes time and energy.  
-          But you can get a long way with a few basic rules of thumb.  
+          Getting accessibility right is difficult.
+          Knowing how to apply appropriate ARIA roles takes time and energy.
+          But you can get a long way with a few basic rules of thumb.
         </aside>
       </script>
     </section>
@@ -346,8 +346,8 @@
         <p class="fragment">Comments</p>
 
         <aside class="notes">
-          
-          Enough comments? Too many comments can sometimes become noise  
+
+          Enough comments? Too many comments can sometimes become noise
         </aside>
       </script>
     </section>
@@ -360,7 +360,7 @@
       <script type="text/template">
         <h2>Code smells</h2>
         <p class="fragment">
-          Larry Garfield at DrupalCon London 2011  
+          Larry Garfield at DrupalCon London 2011
           https://www.youtube.com/watch?v=Z78ZP_UtaKE
         </p>
         <ul class="fragment">
@@ -374,18 +374,18 @@
         </ul>
 
         <aside class="notes">
-          What is a code smell?  
-          A sign of possible problems.  
+          What is a code smell?
+          A sign of possible problems.
           Not rules, but guidelines
-          These ideas are also applicable to other languages  
-          I learned from Larry in Croydon - 7 common code smells  
-          And - Functions that do too much  
-          Or - functions that sometimes do different things  
-          If - excessive complexity  
-          Testability - can it be tested? if not, bad sign  
-          Docs - comments  
-          Tight Coupling - dependent on other parts of system  
-          Impurity - side effects plus return values  
+          These ideas are also applicable to other languages
+          I learned from Larry in Croydon - 7 common code smells
+          And - Functions that do too much
+          Or - functions that sometimes do different things
+          If - excessive complexity
+          Testability - can it be tested? if not, bad sign
+          Docs - comments
+          Tight Coupling - dependent on other parts of system
+          Impurity - side effects plus return values
         </aside>
       </script>
     </section>
@@ -399,14 +399,14 @@
         ## Custom v contrib
 
         <aside class="notes">
-          Drupal people often say "There's a module for that"  
-          But is it appropriate?  
-          When you add contrib modules, review them like you'd review custom code  
-          Often the contrib module is like a Swiss Army knife - multipurpose, but not optimised for your specific use case  
-          Maybe you just want a simple, efficient tool  
-          When you review custom code, should a contrib module be used instead?  
-          Should the custom module be made generic, and contributed?  
-          We try to do this where possible at Capgemini - Stomp, Route    
+          Drupal people often say "There's a module for that"
+          But is it appropriate?
+          When you add contrib modules, review them like you'd review custom code
+          Often the contrib module is like a Swiss Army knife - multipurpose, but not optimised for your specific use case
+          Maybe you just want a simple, efficient tool
+          When you review custom code, should a contrib module be used instead?
+          Should the custom module be made generic, and contributed?
+          We try to do this where possible at Capgemini - Stomp, Route
         </aside>
       </script>
     </section>
@@ -415,11 +415,11 @@
       <script type="text/template">
         <p>&nbsp;</p>
         <aside class="notes">
-          A few points about the way to do code reviews  
-          If you see a problem, speak up  
-          Don't keep quiet because you're junior or unconfident  
-          If you don't understand what a piece of code is doing, it probably says more about the code than it does about you  
-          Be frank, open and honest  
+          A few points about the way to do code reviews
+          If you see a problem, speak up
+          Don't keep quiet because you're junior or unconfident
+          If you don't understand what a piece of code is doing, it probably says more about the code than it does about you
+          Be frank, open and honest
         </aside>
       </script>
     </section>
@@ -428,16 +428,16 @@
       <script type="text/template">
         <h2 class="fragment">Don't make it personal</h2>
         <aside class="notes">
-          We're reviewing the code, not the coder  
-          We all make mistakes - that's how we learn  
-          Writing bad code doesn't make you a bad person  
-          Code review isn't a competition - not a chance to snipe at each other  
-          You're a team - support each other  
-          Help colleagues improve - share links, ideas  
-          Don't just tell people when they're doing something wrong - point to examples of good code  
+          We're reviewing the code, not the coder
+          We all make mistakes - that's how we learn
+          Writing bad code doesn't make you a bad person
+          Code review isn't a competition - not a chance to snipe at each other
+          You're a team - support each other
+          Help colleagues improve - share links, ideas
+          Don't just tell people when they're doing something wrong - point to examples of good code
           Get everyone involved - we can all learn from each other
-          How your team behaves towards each other is as important as the quality of the work  
-          Remember that your colleagues are human  
+          How your team behaves towards each other is as important as the quality of the work
+          Remember that your colleagues are human
         </aside>
       </script>
     </section>
@@ -453,16 +453,16 @@
         <p class="fragment">Pre-commit hooks:<br/>https://github.com/geraldvillorente/drupal-pre-commit</p>
         <p class="fragment">Static analysis with Jenkins:<br/>http://reload.github.io/jenkins-drupal-template/</p>
         <aside class="notes">
-          I'm a big coding standards pedant - improve signal to noise in dev and code review  
-          But adding comments about whitespace is pretty tedious  
-          So get machines to do the boring work for you  
-          appropriate level depends on size of your team  
-          Integrate PHPCodeSniffer with your IDE  
-          Pre-commit hooks  
+          I'm a big coding standards pedant - improve signal to noise in dev and code review
+          But adding comments about whitespace is pretty tedious
+          So get machines to do the boring work for you
+          appropriate level depends on size of your team
+          Integrate PHPCodeSniffer with your IDE
+          Pre-commit hooks
           Integrate your CI server with your pull requests
-          If it breaks coding standards, the code doesn't get merged  
-          If the unit tests fail, the code doesn't get merged  
-          If it is horrendously complex, the code doesn't get merged  
+          If it breaks coding standards, the code doesn't get merged
+          If the unit tests fail, the code doesn't get merged
+          If it is horrendously complex, the code doesn't get merged
         </aside>
       </script>
     </section>
@@ -477,20 +477,20 @@
         <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
       </div>
         <aside class="notes">
-          Not so much about the review itself, but about the pull request.<br/>  
-          In the same way that long functions are a code smell, so are big pull requests<br/>    
+          Not so much about the review itself, but about the pull request.<br/>
+          In the same way that long functions are a code smell, so are big pull requests<br/>
           Branching is easy with Git - if it's a big feature, create a feature branch, and review the code as it's being merged into that branch  <br/>
           If you wait until the feature is ready to merge into your main branch, reviewing it will be a nightmare    <br/>
-          Watch out for attention fatigue - it's difficult to review large changes<br/>    
+          Watch out for attention fatigue - it's difficult to review large changes<br/>
           If you give people too much information, they'll struggle.  <br/>
-          Cognitive load of reviewing large change means reviewers are less likely to spot problems.<br/>    
+          Cognitive load of reviewing large change means reviewers are less likely to spot problems.<br/>
           Code review requires concentration, and it's difficult to concentrate for a long time.  <br/>
           And that seems like an appropriate place to finish.
         </aside>
     </section>
 
     <section>
-      <h2>Image credits</h2>  
+      <h2>Image credits</h2>
       <div class="split-screen three-column">
         <a href="http://www.osnews.com/story/19266/WTFs_m">WTFs per minute</a>
         <a href="https://www.flickr.com/photos/hagengraf/6520777613">Pull request</a>
@@ -518,7 +518,7 @@
     <section data-markdown>
       <script type="text/template">
         ## Further Reading
-        [Better Learning Through Code Reviews](https://capgemini.github.io/learning/better-learning-code-reviews/)  
+        [Better Learning Through Code Reviews](https://capgemini.github.io/learning/better-learning-code-reviews/)
 
         [What To Look For In A Code Review](https://capgemini.github.io/drupal/what-to-look-for-in-code-review/)
       </script>
