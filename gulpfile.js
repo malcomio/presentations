@@ -31,7 +31,7 @@ const banner = `/*!
 * ${pkg.homepage}
 * MIT licensed
 *
-* Copyright (C) 2011-2022 Hakim El Hattab, https://hakim.se
+* Copyright (C) 2011-2023 Hakim El Hattab, https://hakim.se
 */\n`
 
 // Prevents warnings from opening too many test pages
@@ -61,12 +61,12 @@ const babelConfig = {
 // polyfilling older browsers and a larger bundle.
 const babelConfigESM = JSON.parse( JSON.stringify( babelConfig ) );
 babelConfigESM.presets[0][1].targets = { browsers: [
-    'last 2 Chrome versions',
-    'last 2 Safari versions',
-    'last 2 iOS versions',
-    'last 2 Firefox versions',
-    'last 2 Edge versions',
-] };
+        'last 2 Chrome versions',
+        'last 2 Safari versions',
+        'last 2 iOS versions',
+        'last 2 Firefox versions',
+        'last 2 Edge versions',
+    ] };
 
 let cache = {};
 
@@ -129,59 +129,59 @@ gulp.task('plugins', () => {
         { name: 'RevealMath', input: './plugin/math/plugin.js', output: './plugin/math/math' },
     ].map( plugin => {
         return rollup({
-                cache: cache[plugin.input],
-                input: plugin.input,
-                plugins: [
-                    resolve(),
-                    commonjs(),
-                    babel({
-                        ...babelConfig,
-                        ignore: [/node_modules\/(?!(highlight\.js|marked)\/).*/],
-                    }),
-                    terser()
-                ]
-            }).then( bundle => {
-                cache[plugin.input] = bundle.cache;
-                bundle.write({
-                    file: plugin.output + '.esm.js',
-                    name: plugin.name,
-                    format: 'es'
-                })
+            cache: cache[plugin.input],
+            input: plugin.input,
+            plugins: [
+                resolve(),
+                commonjs(),
+                babel({
+                    ...babelConfig,
+                    ignore: [/node_modules\/(?!(highlight\.js|marked)\/).*/],
+                }),
+                terser()
+            ]
+        }).then( bundle => {
+            cache[plugin.input] = bundle.cache;
+            bundle.write({
+                file: plugin.output + '.esm.js',
+                name: plugin.name,
+                format: 'es'
+            })
 
-                bundle.write({
-                    file: plugin.output + '.js',
-                    name: plugin.name,
-                    format: 'umd'
-                })
-            });
+            bundle.write({
+                file: plugin.output + '.js',
+                name: plugin.name,
+                format: 'umd'
+            })
+        });
     } ));
 })
 
 // a custom pipeable step to transform Sass to CSS
 function compileSass() {
-  return through.obj( ( vinylFile, encoding, callback ) => {
-    const transformedFile = vinylFile.clone();
+    return through.obj( ( vinylFile, encoding, callback ) => {
+        const transformedFile = vinylFile.clone();
 
-    sass.render({
-        data: transformedFile.contents.toString(),
-        includePaths: ['css/', 'css/theme/template']
-    }, ( err, result ) => {
-        if( err ) {
-            console.log( vinylFile.path );
-            console.log( err.formatted );
-        }
-        else {
-            transformedFile.extname = '.css';
-            transformedFile.contents = result.css;
-            callback( null, transformedFile );
-        }
+        sass.render({
+            data: transformedFile.contents.toString(),
+            includePaths: ['css/', 'css/theme/template']
+        }, ( err, result ) => {
+            if( err ) {
+                console.log( vinylFile.path );
+                console.log( err.formatted );
+            }
+            else {
+                transformedFile.extname = '.css';
+                transformedFile.contents = result.css;
+                callback( null, transformedFile );
+            }
+        });
     });
-  });
 }
 
 gulp.task('css-themes', () => gulp.src(['./css/theme/source/*.{sass,scss}'])
-        .pipe(compileSass())
-        .pipe(gulp.dest('./dist/theme')))
+    .pipe(compileSass())
+    .pipe(gulp.dest('./dist/theme')))
 
 gulp.task('css-core', () => gulp.src(['css/reveal.scss'])
     .pipe(compileSass())
@@ -241,14 +241,14 @@ gulp.task('qunit', () => {
     return new Promise( ( resolve, reject ) => {
 
         tests.then( () => {
-                if( failingTests > 0 ) {
-                    reject( new Error(`${failingTests}/${totalTests} tests failed`.red) );
-                }
-                else {
-                    console.log(`${'✔'} Passed ${totalTests} tests`.green.bold);
-                    resolve();
-                }
-            } )
+            if( failingTests > 0 ) {
+                reject( new Error(`${failingTests}/${totalTests} tests failed`.red) );
+            }
+            else {
+                console.log(`${'✔'} Passed ${totalTests} tests`.green.bold);
+                resolve();
+            }
+        } )
             .catch( () => {
                 reject();
             } )
@@ -260,8 +260,8 @@ gulp.task('qunit', () => {
 } )
 
 gulp.task('eslint', () => gulp.src(['./js/**', 'gulpfile.js'])
-        .pipe(eslint())
-        .pipe(eslint.format()))
+    .pipe(eslint())
+    .pipe(eslint.format()))
 
 gulp.task('test', gulp.series( 'eslint', 'qunit' ))
 
@@ -278,15 +278,15 @@ gulp.task('package', gulp.series(() =>
             './lib/**',
             './images/**',
             './plugin/**',
-            './**.md'
+            './**/*.md'
         ],
         { base: './' }
     )
-    .pipe(zip('reveal-js-presentation.zip')).pipe(gulp.dest('./'))
+        .pipe(zip('reveal-js-presentation.zip')).pipe(gulp.dest('./'))
 
 ))
 
-gulp.task('reload', () => gulp.src(['*.html', '*.md'])
+gulp.task('reload', () => gulp.src(['**/*.html', '**/*.md'])
     .pipe(connect.reload()));
 
 gulp.task('serve', () => {
@@ -298,7 +298,7 @@ gulp.task('serve', () => {
         livereload: true
     })
 
-    gulp.watch(['*.html', '*.md'], gulp.series('reload'))
+    gulp.watch(['**/*.html', '**/*.md'], gulp.series('reload'))
 
     gulp.watch(['js/**'], gulp.series('js', 'reload', 'eslint'))
 

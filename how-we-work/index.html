@@ -17,24 +17,11 @@
   <meta name="viewport"
         content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-  <link rel="stylesheet" href="../css/reveal.css">
-  <link rel="stylesheet" href="../css/theme/malcomio.css">
+  <link rel="stylesheet" href="../dist/reveal.css">
+  <link rel="stylesheet" href="../dist/theme/malcomio.css" id="theme">
 
-  <!-- Theme used for syntax highlighting of code -->
-  <link rel="stylesheet" href="../lib/css/zenburn.css">
-
-  <!-- Printing and PDF exports -->
-  <script>
-    var link = document.createElement('link');
-    var print = window.location.search.match(/print-pdf/gi);
-
-    link.rel = 'stylesheet';
-    link.type = 'text/css';
-    link.href = print ? '../css/print/pdf.css' : '../css/print/paper.css';
-    document.getElementsByTagName('head')[0].appendChild(link);
-  </script>
-
-  <!--[if lt IE 9]><script src="../lib/js/html5shiv.js"></script><![endif]-->
+  <link rel="stylesheet" href="../plugin/highlight/monokai.css">
+  
 </head>
 
 <body>
@@ -125,7 +112,7 @@
 
 
 
-    <section data-markdown>
+    <section data-markdown data-visibility="hidden">
       <script type="text/template">
         <h2>It's OK to say you don't know the answer</h2>
         <p class="fragment">Best case: "It's fixed already"</p>
@@ -167,6 +154,7 @@
     </section>
 
     <section
+      data-visibility="hidden"
       data-markdown
       data-background-image="images/tech_support_cheat_sheet.png"
       data-background-size="contain"
@@ -411,57 +399,21 @@
 
 </div>
 
-<script src="../lib/js/head.min.js"></script>
-<script src="../js/reveal.js"></script>
+<script src="../dist/reveal.js"></script>
+<script src="../plugin/markdown/markdown.js"></script>
+<script src="../plugin/highlight/highlight.js"></script>
+<script src="../plugin/notes/notes.js"></script>
+<script src="../plugin/math/math.js"></script>
 
 <script>
 
-  // More info https://github.com/hakimel/reveal.js#configuration
   Reveal.initialize({
     controls: false,
     progress: false,
     history: true,
     center: true,
-    showNotes: print,
 
-    transition: 'slide', // none/fade/slide/convex/concave/zoom
-
-    // More info https://github.com/hakimel/reveal.js#dependencies
-    dependencies: [
-      {
-        src: '../lib/js/classList.js',
-        condition: function () {
-          return !document.body.classList;
-        }
-      },
-      {
-        src: '../plugin/markdown/marked.js',
-        condition: function () {
-          return !!document.querySelector('[data-markdown]');
-        }
-      },
-      {
-        src: '../plugin/markdown/markdown.js',
-        condition: function () {
-          return !!document.querySelector('[data-markdown]');
-        }
-      },
-      {
-        src: '../plugin/highlight/highlight.js',
-        async: true,
-        callback: function () {
-          hljs.initHighlightingOnLoad();
-        }
-      },
-      {
-        src: '../plugin/zoom-js/zoom.js',
-        async: true
-      },
-      {
-        src: '../plugin/notes/notes.js',
-        async: true
-      }
-    ]
+    plugins: [ RevealMarkdown, RevealHighlight, RevealNotes, RevealMath.KaTeX ]
   });
 
 </script>

@@ -7,11 +7,9 @@
 
   <title>Presentations by Malcolm Young</title>
 
-  <link rel="stylesheet" href="css/reveal.css">
-  <link rel="stylesheet" href="css/theme/malcomio.css">
+  <link rel="stylesheet" href="dist/reveal.css">
+  <link rel="stylesheet" href="dist/theme/malcomio.css">
 
-  <!-- Theme used for syntax highlighting of code -->
-  <link rel="stylesheet" href="lib/css/zenburn.css">
 </head>
 <body>
 <div class="reveal">
@@ -40,30 +38,22 @@
 </div>
 
 <script src="lib/js/head.min.js"></script>
-<script src="js/reveal.js"></script>
+<script src="dist/reveal.js"></script>
+<script src="plugin/markdown/markdown.js"></script>
+<script src="plugin/highlight/highlight.js"></script>
+<script src="plugin/notes/notes.js"></script>
 
 <script>
-  // More info https://github.com/hakimel/reveal.js#configuration
-  Reveal.initialize({
-    history: true,
 
-    // More info https://github.com/hakimel/reveal.js#dependencies
-    dependencies: [
-      {src: 'plugin/markdown/marked.js'},
-      {src: 'plugin/markdown/markdown.js'},
-      {
-        src: 'plugin/notes/notes.js',
-        async: true
-      },
-      {
-        src: 'plugin/highlight/highlight.js',
-        async: true,
-        callback: function () {
-          hljs.initHighlightingOnLoad();
-        }
-      }
-    ]
+  Reveal.initialize({
+    controls: true,
+    progress: true,
+    history: true,
+    center: true,
+
+    plugins: [ RevealMarkdown, RevealHighlight, RevealNotes, RevealMath.KaTeX ]
   });
+
 </script>
 </body>
 </html>

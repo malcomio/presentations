@@ -17,24 +17,10 @@
   <meta name="viewport"
         content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-  <link rel="stylesheet" href="../css/reveal.css">
-  <link rel="stylesheet" href="../css/theme/malcomio.css">
+  <link rel="stylesheet" href="../dist/reveal.css">
+  <link rel="stylesheet" href="../dist/theme/white.css" id="theme">
 
-  <!-- Theme used for syntax highlighting of code -->
-  <link rel="stylesheet" href="../lib/css/zenburn.css">
-
-  <!-- Printing and PDF exports -->
-  <script>
-    var link = document.createElement('link');
-    var print = window.location.search.match(/print-pdf/gi);
-
-    link.rel = 'stylesheet';
-    link.type = 'text/css';
-    link.href = print ? '../css/print/pdf.css' : '../css/print/paper.css';
-    document.getElementsByTagName('head')[0].appendChild(link);
-  </script>
-
-  <!--[if lt IE 9]><script src="../lib/js/html5shiv.js"></script><![endif]-->
+  <link rel="stylesheet" href="../plugin/highlight/monokai.css">
 </head>
 
 <body>
@@ -56,6 +42,93 @@
         <aside class="notes">
         </aside>
       </script>
+    </section>
+    
+    <section>
+      <ul>
+        <li></li>
+      </ul>
+      <aside class="notes">
+        Title: "Leadership Pitfalls: How Not to Lead a Team"
+
+        Slide 1: Introduction
+        - Welcome participants and introduce the topic: "Leadership Pitfalls: How Not to Lead a Team."
+        - State the importance of effective leadership in achieving team success.
+
+        Slide 2: Common Leadership Pitfalls
+        - Highlight some common leadership pitfalls that can hinder team performance:
+        1. Micromanagement
+        2. Lack of Communication
+        3. Absence of Trust
+        4. Failure to Delegate
+        5. Inadequate Feedback
+
+        Slide 3: Micromanagement
+        - Define micromanagement and explain its negative effects on the team:
+        - Stifles creativity and innovation
+        - Hinders team members' growth and autonomy
+        - Creates a toxic work environment
+
+        Slide 4: Lack of Communication
+        - Emphasize the importance of effective communication in leadership:
+        - Clear goals and expectations
+        - Open and transparent communication channels
+        - Active listening and empathy
+
+        Slide 5: Absence of Trust
+        - Discuss the significance of trust in team dynamics:
+        - Trust fosters collaboration and cooperation
+        - Encourages risk-taking and creativity
+        - Builds a positive and supportive work environment
+
+        Slide 6: Failure to Delegate
+        - Explain the importance of delegation for both the leader and team members:
+        - Empowers team members and develops their skills
+        - Allows leaders to focus on strategic tasks
+        - Promotes a sense of ownership and accountability
+
+        Slide 7: Inadequate Feedback
+        - Highlight the value of constructive feedback in leadership:
+        - Motivates and inspires team members
+        - Identifies areas for improvement
+        - Strengthens relationships and trust
+
+        Slide 8: Case Studies
+        - Share real-life examples of leaders who demonstrated these pitfalls:
+        - Highlight the negative consequences they faced
+        - Discuss what could have been done differently
+
+        Slide 9: Strategies for Effective Leadership
+        - Provide practical tips to avoid these pitfalls and become an effective leader:
+        1. Empower and trust your team members
+        2. Foster open and transparent communication
+        3. Delegate tasks based on team members' strengths
+        4. Provide timely and constructive feedback
+        5. Continuously improve your leadership skills through learning and development
+
+        Slide 10: Q&A Session
+        - Encourage participants to ask questions and share their experiences.
+        - Answer queries and provide additional insights on effective leadership.
+
+        Slide 11: Key Takeaways
+        - Summarize the main points covered in the presentation:
+        - Avoid micromanagement and promote autonomy.
+        - Prioritize effective communication and trust-building.
+        - Delegate tasks to empower team members.
+        - Provide regular and constructive feedback.
+        - Continuously improve leadership skills.
+
+        Slide 12: Conclusion
+        - Recap the importance of effective leadership in team success.
+        - Encourage participants to reflect on their own leadership styles and make necessary changes.
+        - Thank participants for their attention and engagement.
+
+        Note: Remember to adapt and customize the presentation according to your specific audience and time constraints.
+      </aside>
+      
+      <aside class="notes">
+        HBR stuff from 
+      </aside>
     </section>
 
     <section
@@ -128,58 +201,22 @@
 
 </div>
 
-<script src="../lib/js/head.min.js"></script>
-<script src="../js/reveal.js"></script>
+
+<script src="../dist/reveal.js"></script>
+<script src="../plugin/markdown/markdown.js"></script>
+<script src="../plugin/highlight/highlight.js"></script>
+<script src="../plugin/notes/notes.js"></script>
+<script src="../plugin/math/math.js"></script>
 
 <script>
 
-  // More info https://github.com/hakimel/reveal.js#configuration
   Reveal.initialize({
-    controls: false,
-    progress: false,
+    controls: true,
+    progress: true,
     history: true,
     center: true,
-    showNotes: print,
-    slideNumber: 'c/t',
 
-    transition: 'slide', // none/fade/slide/convex/concave/zoom
-
-    // More info https://github.com/hakimel/reveal.js#dependencies
-    dependencies: [
-      {
-        src: '../lib/js/classList.js',
-        condition: function () {
-          return !document.body.classList;
-        }
-      },
-      {
-        src: '../plugin/markdown/marked.js',
-        condition: function () {
-          return !!document.querySelector('[data-markdown]');
-        }
-      },
-      {
-        src: '../plugin/markdown/markdown.js',
-        condition: function () {
-          return !!document.querySelector('[data-markdown]');
-        }
-      },
-      {
-        src: '../plugin/highlight/highlight.js',
-        async: true,
-        callback: function () {
-          hljs.initHighlightingOnLoad();
-        }
-      },
-      {
-        src: '../plugin/zoom-js/zoom.js',
-        async: true
-      },
-      {
-        src: '../plugin/notes/notes.js',
-        async: true
-      }
-    ]
+    plugins: [ RevealMarkdown, RevealHighlight, RevealNotes, RevealMath.KaTeX ]
   });
 
 </script>
