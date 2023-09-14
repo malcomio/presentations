@@ -2,206 +2,270 @@
 <html lang="en">
 
 <head>
-  <meta charset="utf-8">
+    <meta charset="utf-8">
 
-  <title>How Not To Lead A Team</title>
+    <title>How Not To Lead A Team</title>
 
-  <meta name="description"
-        content="A presentation on why and how to do code review for Drupal">
-  <meta name="author" content="Malcolm Young">
+    <meta name="description"
+          content="A presentation on why and how to do code review for Drupal">
+    <meta name="author" content="Malcolm Young">
 
-  <meta name="apple-mobile-web-app-capable" content="yes">
-  <meta name="apple-mobile-web-app-status-bar-style"
-        content="black-translucent">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style"
+          content="black-translucent">
 
-  <meta name="viewport"
-        content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-  <link rel="stylesheet" href="../dist/reveal.css">
-  <link rel="stylesheet" href="../dist/theme/white.css" id="theme">
+    <link rel="stylesheet" href="../dist/reveal.css">
+    <link rel="stylesheet" href="../dist/theme/malcomio.css" id="theme">
 
-  <link rel="stylesheet" href="../plugin/highlight/monokai.css">
+    <link rel="stylesheet" href="../plugin/highlight/monokai.css">
 </head>
 
 <body>
 
 <div class="reveal">
 
-  <!-- Any section element inside of this container is displayed as a slide -->
-  <div class="slides">
-    <section data-markdown data-background-color="#fff">
-      <script type="text/template">
-        # How Not To Lead A Team
+    <!-- Any section element inside of this container is displayed as a slide -->
+    <div class="slides">
+        <section data-markdown data-background-color="#fff">
+            <script type="text/template">
+                # How Not To Lead A Team
 
-        Malcolm Young
+                Malcolm Young
 
-        [@malcomio](https://twitter.com/malcomio)
+                [@malcomio](https://twitter.com/malcomio)
 
-        https://malcomio.github.io/presentations/how-not-to-lead
+                https://malcomio.github.io/presentations/how-not-to-lead
 
-        <aside class="notes">
-        </aside>
-      </script>
-    </section>
-    
-    <section>
-      <ul>
-        <li></li>
-      </ul>
-      <aside class="notes">
-        Title: "Leadership Pitfalls: How Not to Lead a Team"
+                <aside class="notes">
+                    When we think of great leaders, most people tend to think of figures from history - generally the fields
+                    of politics, or war, or sport - people like this: 
+                </aside>
+            </script>
+        </section>
 
-        Slide 1: Introduction
-        - Welcome participants and introduce the topic: "Leadership Pitfalls: How Not to Lead a Team."
-        - State the importance of effective leadership in achieving team success.
+        <section data-background-image="images/leaders.jpeg">
+            <aside class="notes" data-markdown>
+                These are some of the images that first came to mind for me when I thought of people who symbolised leadership in different ways.
+                
+                These individuals are all flawed in their own way, and some of them are deeply problematic.
 
-        Slide 2: Common Leadership Pitfalls
-        - Highlight some common leadership pitfalls that can hinder team performance:
-        1. Micromanagement
-        2. Lack of Communication
-        3. Absence of Trust
-        4. Failure to Delegate
-        5. Inadequate Feedback
+                The fact that all the people pictured here are men is also problematic, that's not what I'm here to talk about.
+                
+                In this talk I want to talk about some other problems - the mistakes that we make as leaders. 
+            </aside>
+        </section>
 
-        Slide 3: Micromanagement
-        - Define micromanagement and explain its negative effects on the team:
-        - Stifles creativity and innovation
-        - Hinders team members' growth and autonomy
-        - Creates a toxic work environment
+        <section
+                data-background-image="images/superman.jpg"
+                class="text-on-light"
+        >
+            <aside class="notes" data-markdown>
+                Sometimes as a technical lead, you want to do what you're good at.
 
-        Slide 4: Lack of Communication
-        - Emphasize the importance of effective communication in leadership:
-        - Clear goals and expectations
-        - Open and transparent communication channels
-        - Active listening and empathy
+                For most leads, we've been promoted after demonstrating our competence as effective individual contributors.
+                
+                
+                
+                , you get satisfaction from solving problems - building things, writing code, fixing bugs.
 
-        Slide 5: Absence of Trust
-        - Discuss the significance of trust in team dynamics:
-        - Trust fosters collaboration and cooperation
-        - Encourages risk-taking and creativity
-        - Builds a positive and supportive work environment
+                As an effective individual contributor, you want to be in the thick of things, getting things done. When you see your team struggling, you’re tempted to jump in and do it. It’s quicker just to do it yourself.
+                But it's not scalable, and it doesn't leave space for the team to learn
+                
+                It's nice for your ego to be treated like a hero.                
+                
+                It's not scalable, and it's not good for your health.
 
-        Slide 6: Failure to Delegate
-        - Explain the importance of delegation for both the leader and team members:
-        - Empowers team members and develops their skills
-        - Allows leaders to focus on strategic tasks
-        - Promotes a sense of ownership and accountability
+                The team don't get a chance to learn.
+                
+                This is the mistake that I most frequently make.  
+                
+                Good talk on this and other things by Pat Kua at Lead Dev London 2017 
+            </aside>
+        </section>
 
-        Slide 7: Inadequate Feedback
-        - Highlight the value of constructive feedback in leadership:
-        - Motivates and inspires team members
-        - Identifies areas for improvement
-        - Strengthens relationships and trust
+        <section
+                data-background-image="images/general_behind.jpg"
+                class="text-on-light"
+        >
+            <aside class="notes">
+            </aside>
+        </section>
 
-        Slide 8: Case Studies
-        - Share real-life examples of leaders who demonstrated these pitfalls:
-        - Highlight the negative consequences they faced
-        - Discuss what could have been done differently
+        <section
+                data-background-image="images/coneofsilence.jpg"
+                class="text-on-light"
+        >
+            <aside class="notes">
+                Some leaders believe that information is power, and want to hoard it to maximise their power.  
+                
+                
+            </aside>
+        </section>
 
-        Slide 9: Strategies for Effective Leadership
-        - Provide practical tips to avoid these pitfalls and become an effective leader:
-        1. Empower and trust your team members
-        2. Foster open and transparent communication
-        3. Delegate tasks based on team members' strengths
-        4. Provide timely and constructive feedback
-        5. Continuously improve your leadership skills through learning and development
+        <section
+                data-background-image="images/microphone.jpg"
+                class="text-on-light"
+        >
+            <aside class="notes">
+                If not having enough information is a problem, having too much noise coming
 
-        Slide 10: Q&A Session
-        - Encourage participants to ask questions and share their experiences.
-        - Answer queries and provide additional insights on effective leadership.
+                Value people’s time - don’t involve them unless they need to be involved
 
-        Slide 11: Key Takeaways
-        - Summarize the main points covered in the presentation:
-        - Avoid micromanagement and promote autonomy.
-        - Prioritize effective communication and trust-building.
-        - Delegate tasks to empower team members.
-        - Provide regular and constructive feedback.
-        - Continuously improve leadership skills.
+                Meetings are expensive
+            </aside>
+        </section>
 
-        Slide 12: Conclusion
-        - Recap the importance of effective leadership in team success.
-        - Encourage participants to reflect on their own leadership styles and make necessary changes.
-        - Thank participants for their attention and engagement.
+        <section
+                data-background-image="images/egypt.jpg"
+                class="text-on-light"
+        >
+            <aside class="notes">
+                All developers 
+                
+                Closely related is the micromanager - 
+                
+                
+            </aside>
+        </section>
 
-        Note: Remember to adapt and customize the presentation according to your specific audience and time constraints.
-      </aside>
-      
-      <aside class="notes">
-        HBR stuff from 
-      </aside>
-    </section>
+        <section data-background-image="images/hammock.jpg">
+            <aside class="notes">
+                The other side of that coin is the manager who is so hands off as to be invisible
+            </aside>
+        </section>
 
-    <section
-      data-background-image="images/egypt.jpg"
-      class="text-on-light"
-    >
-      <aside class="notes">
-      </aside>
-    </section>
+        <section data-background-image="images/doorhandle.jpg">
+            <aside class="notes">
+                obsession with quality
+            </aside>
+        </section>
 
-    <section
-      data-background-image="images/general_behind.jpg"
-      class="text-on-light"
-    >
-      <aside class="notes">
-      </aside>
-    </section>
+        <section data-background-image="images/barn.jpg">
+            <aside class="notes">
+                On the other hand
+            </aside>
+        </section>
 
-    <section
-      data-background-image="images/battle.jpg"
-      class="text-on-light"
-    >
-      <aside class="notes">
-      </aside>
-    </section>
+        <section
+                data-background-image="images/balance.jpg"
+                class="text-on-light"
+        >
+            <aside class="notes">
+                So you've probably noticed a pattern - 
+            </aside>
+        </section>
 
-    <section
-      data-background-image="images/balance.jpg"
-      class="text-on-light"
-    >
-      <aside class="notes">
-      </aside>
-    </section>
+        <section data-markdown>
+            <script type="text/template">
+                ## Further Reading And Viewing
+                [How Not To Lead A Team](https://capgemini.github.io/learning/how-not-to-lead/)
+                
+                [The Constant Life Of A Tech Lead - Pat Kua at Lead Dev 2017
+                ](https://www.youtube.com/watch?v=9jd_vpcLK50&list=PLBzScQzZ83I81fnpqX2AkYD5c5cKgrqc2)
+            </script>
+        </section>
 
-    <section data-markdown>
-      <script type="text/template">
-        ## Further Reading
-        [How Not To Lead A Team](https://capgemini.github.io/learning/how-not-to-lead/)
-      </script>
-    </section>
+        <section>
+            <h2>Image credits</h2>
+            <div class="">
+                <ul>
 
-    <section>
-      <h2>Image credits</h2>
-      <div class="">
-        <ul>
+                    <li>
+                        <a href="http://earnthis.net/brian-terrills-100-film-favorites-39-the-ten-commandments/">
+                            Egyptian slaves
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.nga.gov/content/ngaweb/Collection/art-object-page.55097.html">
+                            General behind the lines
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://commons.wikimedia.org/wiki/File%3ABataille_de_Fleurus_1794.JPG">
+                            General
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.nga.gov/content/ngaweb/collection-search-result.html?accession=1943.8.14650">
+                            Balance
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://commons.wikimedia.org/wiki/File:Mahatma-Gandhi,_studio,_1931.jpg">
+                            Mahatma Gandhi
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://commons.wikimedia.org/wiki/File:Jacques-Louis_David_-_The_Emperor_Napoleon_in_His_Study_at_the_Tuileries_-_Google_Art_Project.jpg">
+                            Napoleon
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://commons.wikimedia.org/wiki/File:Washington_Crossing_the_Delaware_by_Emanuel_Leutze,_MMA-NYC,_1851.jpg">Washington</a>
+                    </li>
+                    <li>
+                        <a href="https://commons.wikimedia.org/wiki/File:Terry_Butcher.jpg">
+                            Terry Butcher
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://commons.wikimedia.org/wiki/File:Martin_Luther_King_Jr._and_Ralph_Abernathy_in_St._Augustine,_Florida.jpg">
+                            Martin Luther King
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://commons.wikimedia.org/wiki/File:Winston_Churchill,_cigar_in_mouth,_gives_his_famous_%27V%27_for_victory_sign_during_a_visit_to_Bradford,_4_December_1942._H25966.jpg">
+                            Churchill
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://unsplash.com/photos/j06gLuKK0GM?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">
+                            Balance
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://unsplash.com/photos/9GFyyS-Rl2M?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Hammock</a>
+                    </li>
+                    <li>
+                        <a href="https://www.fifa.com/tournaments/mens/worldcup/1966england/news/remembering-bobby-moore-2017217">Bobby
+                            Moore</a>
+                    </li>
+                    <li>
+                        <a href="https://commons.wikimedia.org/wiki/File:Desktop-wallpaper-superman-flying-above-the-earth-alex-ross-superman-art.jpg">Superman</a>
+                    </li>
 
-          <li><a href="http://earnthis.net/brian-terrills-100-film-favorites-39-the-ten-commandments/">Egyptian slaves</a></li>
-          <li><a href="https://www.nga.gov/content/ngaweb/Collection/art-object-page.55097.html">General behind the lines</a></li>
-          <li><a href="https://commons.wikimedia.org/wiki/File%3ABataille_de_Fleurus_1794.JPG">General</a></li>
-          <li><a href="https://www.nga.gov/content/ngaweb/collection-search-result.html?accession=1943.8.14650">Balance</a></li>
-        </ul>
+                    <li>
+                        <a href="https://www.sootoday.com/local-news/cone-of-silence-descends-on-essar-steel-algoma-sale-process-296486">Cone of silence</a>
+                    </li>
 
-      </div>
-    </section>
+                    <li><a href="https://unsplash.com/photos/ASKeuOZqhYU">Microphone</a></li>
+                    <li><a href="https://unsplash.com/photos/an-old-wooden-barn-with-a-rusty-roof-a5r__MaF99A">Barn</a></li>
+                </ul>
 
-    <section data-markdown data-background-color="#fff">
-      <script type="text/template">
-        https://red-route.org
+            </div>
+        </section>
 
-        https://malcomio.github.io/presentations/how-not-to-lead
+        <section data-markdown data-background-color="#fff">
+            <script type="text/template">
+                https://red-route.org
 
-        [@malcomio](https://twitter.com/malcomio)
+                https://malcomio.github.io/presentations/how-not-to-lead
 
-        <aside class="notes">
+                [@malcomio](https://twitter.com/malcomio)
 
-        </aside>
-      </script>
-    </section>
-  </div>
+                <aside class="notes">
+
+                </aside>
+            </script>
+        </section>
+    </div>
 
 </div>
 
-
+<script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
 <script src="../dist/reveal.js"></script>
 <script src="../plugin/markdown/markdown.js"></script>
 <script src="../plugin/highlight/highlight.js"></script>
