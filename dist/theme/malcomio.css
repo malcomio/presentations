@@ -490,3 +490,12 @@ table.no-border {
 .reveal blockquote.twitter-tweet a {
   display: block;
 }
+
+.columns-two {
+  column-count: 2;
+}
+
+.reveal .list-plain {
+  list-style: none;
+  margin-left: 0;
+}

@@ -2,266 +2,288 @@
 <html lang="en">
 
 <head>
-    <meta charset="utf-8">
+  <meta charset="utf-8">
 
-    <title>How Not To Lead A Team</title>
+  <title>How Not To Lead A Team</title>
 
-    <meta name="description"
-          content="A presentation on why and how to do code review for Drupal">
-    <meta name="author" content="Malcolm Young">
+  <meta name="description"
+        content="A presentation on why and how to do code review for Drupal">
+  <meta name="author" content="Malcolm Young">
 
-    <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="apple-mobile-web-app-status-bar-style"
-          content="black-translucent">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style"
+        content="black-translucent">
 
-    <meta name="viewport"
-          content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-    <link rel="stylesheet" href="../dist/reveal.css">
-    <link rel="stylesheet" href="../dist/theme/malcomio.css" id="theme">
+  <link rel="stylesheet" href="../dist/reveal.css">
+  <link rel="stylesheet" href="../dist/theme/malcomio.css" id="theme">
 
-    <link rel="stylesheet" href="../plugin/highlight/monokai.css">
+  <link rel="stylesheet" href="../plugin/highlight/monokai.css">
 </head>
 
 <body>
 
 <div class="reveal">
 
-    <!-- Any section element inside of this container is displayed as a slide -->
-    <div class="slides">
-        <section data-markdown data-background-color="#fff">
-            <script type="text/template">
-                # How Not To Lead A Team
+  <!-- Any section element inside of this container is displayed as a slide -->
+  <div class="slides">
+    <section data-markdown data-background-color="#fff">
+      <script type="text/template">
+        # How Not To Lead A Team
 
-                Malcolm Young
+        Malcolm Young
 
-                [@malcomio](https://twitter.com/malcomio)
+        [@malcomio](https://twitter.com/malcomio)
 
-                https://malcomio.github.io/presentations/how-not-to-lead
+        https://malcomio.github.io/presentations/how-not-to-lead
 
-                <aside class="notes">
-                    When we think of great leaders, most people tend to think of figures from history - generally the fields
-                    of politics, or war, or sport - people like this: 
-                </aside>
-            </script>
-        </section>
+        <aside class="notes">
+          When we think of great leaders, most people tend to think of figures from history - generally the
+          fields of politics, or war, or sport - people like this:
+        </aside>
+      </script>
+    </section>
 
-        <section data-background-image="images/leaders.jpeg">
-            <aside class="notes" data-markdown>
-                These are some of the images that first came to mind for me when I thought of people who symbolised leadership in different ways.
-                
-                These individuals are all flawed in their own way, and some of them are deeply problematic.
+    <section data-background-image="images/leaders.jpeg">
+      <aside class="notes" data-markdown>
+        These are some of the images that first came to mind for me when I thought of people who symbolised
+        leadership in different ways.
 
-                The fact that all the people pictured here are men is also problematic, that's not what I'm here to talk about.
-                
-                In this talk I want to talk about some other problems - the mistakes that we make as leaders. 
-            </aside>
-        </section>
+        These individuals are all flawed in their own way, and some of them are deeply problematic.
 
-        <section
-                data-background-image="images/superman.jpg"
-                class="text-on-light"
-        >
-            <aside class="notes" data-markdown>
-                Sometimes as a technical lead, you want to do what you're good at.
+        The fact that all the people pictured here are men is also problematic, but that's not what I'm here to talk
+        about.
 
-                For most leads, we've been promoted after demonstrating our competence as effective individual contributors.
-                
-                
-                
-                , you get satisfaction from solving problems - building things, writing code, fixing bugs.
+        In this talk I want to talk about some other problems - the mistakes that we make as leaders.
+      </aside>
+    </section>
 
-                As an effective individual contributor, you want to be in the thick of things, getting things done. When you see your team struggling, you’re tempted to jump in and do it. It’s quicker just to do it yourself.
-                But it's not scalable, and it doesn't leave space for the team to learn
-                
-                It's nice for your ego to be treated like a hero.                
-                
-                It's not scalable, and it's not good for your health.
+    <section
+      data-background-image="images/superman.jpg"
+      class="text-on-light"
+    >
+      <aside class="notes" data-markdown>
+        Sometimes as a technical lead, you want to do what you're good at.
 
-                The team don't get a chance to learn.
-                
-                This is the mistake that I most frequently make.  
-                
-                Good talk on this and other things by Pat Kua at Lead Dev London 2017 
-            </aside>
-        </section>
+        For most leads, we've been promoted after demonstrating our competence as effective individual
+        contributors.
 
-        <section
-                data-background-image="images/general_behind.jpg"
-                class="text-on-light"
-        >
-            <aside class="notes">
-            </aside>
-        </section>
 
-        <section
-                data-background-image="images/coneofsilence.jpg"
-                class="text-on-light"
-        >
-            <aside class="notes">
-                Some leaders believe that information is power, and want to hoard it to maximise their power.  
-                
-                
-            </aside>
-        </section>
+        , you get satisfaction from solving problems - building things, writing code, fixing bugs.
 
-        <section
-                data-background-image="images/microphone.jpg"
-                class="text-on-light"
-        >
-            <aside class="notes">
-                If not having enough information is a problem, having too much noise coming
+        As an effective individual contributor, you want to be in the thick of things, getting things done. When
+        you see your team struggling, you’re tempted to jump in and do it. It’s quicker just to do it yourself.
+        But it's not scalable, and it doesn't leave space for the team to learn
 
-                Value people’s time - don’t involve them unless they need to be involved
+        It's nice for your ego to be treated like a hero.
 
-                Meetings are expensive
-            </aside>
-        </section>
+        It's not scalable, and it's not good for your health.
 
-        <section
-                data-background-image="images/egypt.jpg"
-                class="text-on-light"
-        >
-            <aside class="notes">
-                All developers 
-                
-                Closely related is the micromanager - 
-                
-                
-            </aside>
-        </section>
+        The team don't get a chance to learn.
 
-        <section data-background-image="images/hammock.jpg">
-            <aside class="notes">
-                The other side of that coin is the manager who is so hands off as to be invisible
-            </aside>
-        </section>
+        This is the mistake that I most frequently make.
 
-        <section data-background-image="images/doorhandle.jpg">
-            <aside class="notes">
-                obsession with quality
-            </aside>
-        </section>
+        Good talk on this and other things by Pat Kua at Lead Dev London 2017
+      </aside>
+    </section>
 
-        <section data-background-image="images/barn.jpg">
-            <aside class="notes">
-                On the other hand
-            </aside>
-        </section>
+    <section
+      data-background-image="images/general_behind.jpg"
+      class="text-on-light"
+    >
+      <aside class="notes" data-markdown>
+      </aside>
+    </section>
 
-        <section
-                data-background-image="images/balance.jpg"
-                class="text-on-light"
-        >
-            <aside class="notes">
-                So you've probably noticed a pattern - 
-            </aside>
-        </section>
+    <section
+      data-background-image="images/coneofsilence.jpg"
+      class="text-on-light"
+    >
+      <aside class="notes" data-markdown>
+        Some leaders believe that information is power, and want to hoard it to maximise their power.
 
-        <section data-markdown>
-            <script type="text/template">
-                ## Further Reading And Viewing
-                [How Not To Lead A Team](https://capgemini.github.io/learning/how-not-to-lead/)
-                
-                [The Constant Life Of A Tech Lead - Pat Kua at Lead Dev 2017
-                ](https://www.youtube.com/watch?v=9jd_vpcLK50&list=PLBzScQzZ83I81fnpqX2AkYD5c5cKgrqc2)
-            </script>
-        </section>
 
-        <section>
-            <h2>Image credits</h2>
-            <div class="">
-                <ul>
+      </aside>
+    </section>
 
-                    <li>
-                        <a href="http://earnthis.net/brian-terrills-100-film-favorites-39-the-ten-commandments/">
-                            Egyptian slaves
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://www.nga.gov/content/ngaweb/Collection/art-object-page.55097.html">
-                            General behind the lines
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://commons.wikimedia.org/wiki/File%3ABataille_de_Fleurus_1794.JPG">
-                            General
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://www.nga.gov/content/ngaweb/collection-search-result.html?accession=1943.8.14650">
-                            Balance
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://commons.wikimedia.org/wiki/File:Mahatma-Gandhi,_studio,_1931.jpg">
-                            Mahatma Gandhi
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://commons.wikimedia.org/wiki/File:Jacques-Louis_David_-_The_Emperor_Napoleon_in_His_Study_at_the_Tuileries_-_Google_Art_Project.jpg">
-                            Napoleon
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://commons.wikimedia.org/wiki/File:Washington_Crossing_the_Delaware_by_Emanuel_Leutze,_MMA-NYC,_1851.jpg">Washington</a>
-                    </li>
-                    <li>
-                        <a href="https://commons.wikimedia.org/wiki/File:Terry_Butcher.jpg">
-                            Terry Butcher
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://commons.wikimedia.org/wiki/File:Martin_Luther_King_Jr._and_Ralph_Abernathy_in_St._Augustine,_Florida.jpg">
-                            Martin Luther King
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://commons.wikimedia.org/wiki/File:Winston_Churchill,_cigar_in_mouth,_gives_his_famous_%27V%27_for_victory_sign_during_a_visit_to_Bradford,_4_December_1942._H25966.jpg">
-                            Churchill
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://unsplash.com/photos/j06gLuKK0GM?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">
-                            Balance
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://unsplash.com/photos/9GFyyS-Rl2M?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Hammock</a>
-                    </li>
-                    <li>
-                        <a href="https://www.fifa.com/tournaments/mens/worldcup/1966england/news/remembering-bobby-moore-2017217">Bobby
-                            Moore</a>
-                    </li>
-                    <li>
-                        <a href="https://commons.wikimedia.org/wiki/File:Desktop-wallpaper-superman-flying-above-the-earth-alex-ross-superman-art.jpg">Superman</a>
-                    </li>
+    <section
+      data-background-image="images/microphone.jpg"
+      class="text-on-light"
+    >
+      <aside class="notes" data-markdown>
+        If not having enough information is a problem, having too much noise coming at the team.
 
-                    <li>
-                        <a href="https://www.sootoday.com/local-news/cone-of-silence-descends-on-essar-steel-algoma-sale-process-296486">Cone of silence</a>
-                    </li>
+        Value people’s time - don’t involve them unless they need to be involved
 
-                    <li><a href="https://unsplash.com/photos/ASKeuOZqhYU">Microphone</a></li>
-                    <li><a href="https://unsplash.com/photos/an-old-wooden-barn-with-a-rusty-roof-a5r__MaF99A">Barn</a></li>
-                </ul>
+        Meetings are expensive, even when working remotely. Perhaps even more so when working remotely
 
-            </div>
-        </section>
+        One of the best project managers I ever worked with had the very valuable skill of shielding the team
+        from noise. He protected them from clients where necessary. He did his job, trusted his team, and got
+        out of their way so that they could get on with their jobs.
+      </aside>
+    </section>
 
-        <section data-markdown data-background-color="#fff">
-            <script type="text/template">
-                https://red-route.org
+    <section
+      data-background-image="images/egypt.jpg"
+      class="text-on-light"
+    >
+      <aside class="notes" data-markdown>
+        All developers
 
-                https://malcomio.github.io/presentations/how-not-to-lead
+        Closely related is the micromanager -
 
-                [@malcomio](https://twitter.com/malcomio)
 
-                <aside class="notes">
+      </aside>
+    </section>
 
-                </aside>
-            </script>
-        </section>
-    </div>
+    <section data-background-image="images/hammock.jpg">
+      <aside class="notes" data-markdown>
+        The other side of that coin is the manager who is so hands off as to be invisible
+      </aside>
+    </section>
+
+    <section data-background-image="images/door_handle.jpg">
+      <aside class="notes" data-markdown>
+        obsession with quality
+      </aside>
+    </section>
+
+    <section data-background-image="images/barn.jpg">
+      <aside class="notes" data-markdown>
+        On the other hand
+      </aside>
+    </section>
+
+    <section
+      data-background-image="images/balance.jpg"
+      class="text-on-light"
+    >
+      <aside class="notes" data-markdown>
+        So you've probably noticed a theme running through these slides, and I'm definitely not the first person
+        to propose it.
+
+        It's the Goldilocks principle - not too hot or too cold, but just right.
+
+        It's the golden mean.
+
+        It's Buddhism's Middle Way.
+
+
+      </aside>
+    </section>
+
+    <section data-markdown>
+      <script type="text/template">
+        ## Further Reading And Viewing
+        [How Not To Lead A Team](https://capgemini.github.io/learning/how-not-to-lead/)
+
+        [The Constant Life Of A Tech Lead - Pat Kua at Lead Dev 2017
+        ](https://www.youtube.com/watch?v=9jd_vpcLK50&list=PLBzScQzZ83I81fnpqX2AkYD5c5cKgrqc2)
+      </script>
+    </section>
+
+    <section>
+      <h2>Image credits</h2>
+      <div>
+        <ul class="columns-two list-plain">
+          <li>
+            <a href="http://earnthis.net/brian-terrills-100-film-favorites-39-the-ten-commandments/">
+              Egyptian slaves
+            </a>
+          </li>
+          <li>
+            <a href="https://www.nga.gov/content/ngaweb/Collection/art-object-page.55097.html">
+              General behind the lines
+            </a>
+          </li>
+          <li>
+            <a href="https://commons.wikimedia.org/wiki/File%3ABataille_de_Fleurus_1794.JPG">
+              General
+            </a>
+          </li>
+          <li>
+            <a href="https://www.nga.gov/content/ngaweb/collection-search-result.html?accession=1943.8.14650">
+              Balance
+            </a>
+          </li>
+          <li>
+            <a href="https://commons.wikimedia.org/wiki/File:Mahatma-Gandhi,_studio,_1931.jpg">
+              Mahatma Gandhi
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://commons.wikimedia.org/wiki/File:Jacques-Louis_David_-_The_Emperor_Napoleon_in_His_Study_at_the_Tuileries_-_Google_Art_Project.jpg">
+              Napoleon
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://commons.wikimedia.org/wiki/File:Washington_Crossing_the_Delaware_by_Emanuel_Leutze,_MMA-NYC,_1851.jpg">Washington</a>
+          </li>
+          <li>
+            <a href="https://commons.wikimedia.org/wiki/File:Terry_Butcher.jpg">
+              Terry Butcher
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://commons.wikimedia.org/wiki/File:Martin_Luther_King_Jr._and_Ralph_Abernathy_in_St._Augustine,_Florida.jpg">
+              Martin Luther King
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://commons.wikimedia.org/wiki/File:Winston_Churchill,_cigar_in_mouth,_gives_his_famous_%27V%27_for_victory_sign_during_a_visit_to_Bradford,_4_December_1942._H25966.jpg">
+              Winston Churchill
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://unsplash.com/photos/j06gLuKK0GM?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">
+              Balance
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://unsplash.com/photos/9GFyyS-Rl2M?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Hammock</a>
+          </li>
+          <li>
+            <a href="https://www.fifa.com/tournaments/mens/worldcup/1966england/news/remembering-bobby-moore-2017217">Bobby
+              Moore</a>
+          </li>
+          <li>
+            <a
+              href="https://commons.wikimedia.org/wiki/File:Desktop-wallpaper-superman-flying-above-the-earth-alex-ross-superman-art.jpg">Superman</a>
+          </li>
+          <li>
+            <a
+              href="https://www.sootoday.com/local-news/cone-of-silence-descends-on-essar-steel-algoma-sale-process-296486">Cone
+              of silence</a>
+          </li>
+          <li>
+            <a href="https://unsplash.com/photos/ASKeuOZqhYU">Microphone</a>
+          </li>
+          <li>
+            <a href="https://unsplash.com/photos/an-old-wooden-barn-with-a-rusty-roof-a5r__MaF99A">Barn</a>
+          </li>
+        </ul>
+
+      </div>
+    </section>
+
+    <section data-markdown data-background-color="#fff">
+      <script type="text/template">
+        https://red-route.org
+
+        https://malcomio.github.io/presentations/how-not-to-lead
+
+        [@malcomio](https://twitter.com/malcomio)
+      </script>
+    </section>
+  </div>
 
 </div>
 
@@ -279,7 +301,7 @@
     history: true,
     center: true,
 
-    plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
+    plugins: [RevealMarkdown, RevealHighlight, RevealNotes]
   });
 
 </script>
