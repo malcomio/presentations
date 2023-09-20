@@ -90,7 +90,6 @@
 				right: 0;
 				width: 40%;
 				height: 60%;
-				overflow: auto;
 				font-size: 18px;
 			}
 
@@ -110,6 +109,7 @@
 				}
 
 				.speaker-controls-time, .speaker-controls-pace {
+          height: 10%;
 					border-bottom: 1px solid rgba( 200, 200, 200, 0.5 );
 					margin-bottom: 10px;
 					padding: 10px 16px;
@@ -170,8 +170,10 @@
 				}
 
 				.speaker-controls-notes {
+          height: 100%;
 					padding: 10px 16px;
-				}
+          overflow: auto;
+        }
 
 				.speaker-controls-notes .value {
 					margin-top: 5px;
